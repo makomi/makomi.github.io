@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: https://makomi.github.io/
+    url: /
   - title: "Projects"
     url: /projects/
   - title: "Blog"
