@@ -2,11 +2,8 @@
 permalink: /
 ---
 
-I am an electrical engineer from Dortmund and [interested]({{ "/projects/" | relative_url }}) in electronics, embedded systems, programming, GNU/Linux, and psychology.
+I am an electrical engineer from Dortmund [interested]({{ "/projects/" | relative_url }}) in electronics, system level programming, psychology, politics, and Vipassana meditation.
 
-Have a look at my CV or thesis for more information (i.a. IT skills and practical skills).
+Currently, I work as an embedded systems engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers and support the hardware design.
 
-Currently, I work as an embedded systems programmer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls and room controlers.
-
-This is how you can [get in touch]({{ "/contact/" | relative_url }}) with me.
-
+[Get in touch]({{ "/contact/" | relative_url }}) if you are interested in a collaboration or would like to know more about one of my [projects] or [the topics I write about].
