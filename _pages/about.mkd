@@ -4,7 +4,7 @@ permalink: /
 
 I am an electrical engineer interested in electronics, system level programming, psychology, and politics.
 
-Currently, I work as an embedded systems engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers and support the hardware design.
+Currently, I work as an embedded systems engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers. From time to time I also support the hardware design.
 
 I have been practicing [Vipassana](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation on a regular basis since 2019 and distance myself from self-proclaimed "spiritual" people.
 
