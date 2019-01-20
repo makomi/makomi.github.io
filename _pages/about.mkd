@@ -6,6 +6,8 @@ I am an electrical engineer interested in electronics, system level programming,
 
 Currently, I work as an embedded systems engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers. From time to time I also support the hardware design.
 
+My passion is writing working, well structured, readable code and removing inefficiencies as well as causes of error from the processes I am part of.
+
 I have been practicing [Vipassana](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation on a regular basis since 2019 and distance myself from self-proclaimed "spiritual" people.
 
-[Get in touch]({{ "/contact/" | relative_url }}) if you are interested in a collaboration or would like to know more about one of my [projects]({{ "/projects/" | relative_url }}) or the [topics I write about]({{ "/blog/tags" | relative_url }}).
+[Get in touch]({{ "/contact/" | relative_url }}) if you are interested in a collaboration or would like to know more about one of my [projects]({{ "/projects/" | relative_url }}) or [topics I write about]({{ "/blog/tags" | relative_url }}).
