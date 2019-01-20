@@ -117,6 +117,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Xing"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.xing.com/profile/MatthiasKolja_Miehl"
 
 # Site Footer
 footer:
