@@ -1,0 +1,14 @@
+---
+permalink: /imprint/
+title: "Imprint"
+---
+
+*[German law demands this]*
+
+Matthias Kolja Miehl  
+Stockumer Straße 217  
+44225 Dortmund  
+Germany
+
+<i class="fas fa-fw fa-envelope"></i> impressum at makomi punkt net  
+<i class="fas fa-fw fa-phone"></i> +49 231 586 896 71
