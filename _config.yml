@@ -129,7 +129,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/makomi/"
+      url: "https://github.com/makomi/makomi.github.io"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
