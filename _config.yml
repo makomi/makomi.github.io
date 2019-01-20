@@ -101,7 +101,10 @@ author:
   links:
     - label: "mail@domain"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:mail@domain.net"
+    - label: "GPG key"
+      icon: "fas fa-fw fa-key"
+      # url: "https://link-to-gpg-key"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
