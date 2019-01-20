@@ -6,7 +6,7 @@ I am an electrical engineer interested in electronics, system-level C/C++ progra
 
 Currently, I work as an embedded systems engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers. From time to time I also support the hardware design.
 
-My passion is writing working, well structured, readable code and removing inefficiencies as well as causes of error from the processes I am part of.
+My passion is understanding how things work, writing working, well structured, readable code, and removing inefficiencies as well as causes of error from the processes I am part of.
 
 I have been practicing [*vipassanā*](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [*S. N. Goenka*](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam Harris explains *vipassanā's* scientific approach, the basic practice, and its benefits.
 
