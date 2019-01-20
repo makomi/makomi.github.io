@@ -106,7 +106,7 @@ author:
       icon: "fas fa-fw fa-key"
       # url: "https://link-to-gpg-key"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-globe" # "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
