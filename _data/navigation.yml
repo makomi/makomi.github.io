@@ -8,5 +8,5 @@ main:
     url: /blog/
   - title: "CV"
     url: /assets/docs/miehl_cv.pdf
-  - title: "Contact"
-    url: /contact/
+  #- title: "Contact"
+  #  url: /contact/
