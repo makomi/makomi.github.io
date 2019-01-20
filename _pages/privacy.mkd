@@ -169,12 +169,23 @@ Die Nutzung erfolgt auf Grundlage unserer berechtigten Interessen, d.h. Interess
 Weitere Informationen erhalten Sie in der Datenschutzerklärung von Cloudflare: https://www.cloudflare.com/security-policy.
 
 
-## Google Fonts
+## Einbindung von Diensten und Inhalten Dritter
 
-Wir binden die Schriftarten ("Google Fonts") des Anbieters Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, ein.
+Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als “Inhalte”).
 
-* Datenschutzerklärung: https://www.google.com/policies/privacy/
-* Opt-Out: https://adssettings.google.com/authenticated/
+Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als "Web Beacons" bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die "Pixel-Tags" können Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.
+
+
+## Youtube
+
+Wir binden die Videos der Plattform “YouTube” des Anbieters Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, ein. Datenschutzerklärung: https://www.google.com/policies/privacy/, Opt-Out: https://adssettings.google.com/authenticated.
+
+
+## Font Awesome
+
+Wir binden die Schriftarten ("Font Awesome") des Anbieters [Fonticons Inc.](https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=309677029), 6 Porter Road, Apartment 3R, Cambridge, MA 02140, USA, ein.
+
+* Datenschutzerklärung: https://fontawesome.com/privacy/
 
 
 ## GitHub
