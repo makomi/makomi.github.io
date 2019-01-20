@@ -100,7 +100,7 @@ author:
   email            :
   links:
     - label: "mail@domain"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:mail@domain.net"
     - label: "GPG key"
       icon: "fas fa-fw fa-key"
