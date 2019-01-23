@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Matthias Miehl"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "C/C++ SW Dev for Embedded Systems" # "embedded systems | C/C++ | TDD | CI/CD | Python | Z-Wave"
+  bio              : "embedded systems | C/C++ | TDD | CI/CD | Python | Z-Wave"
   location         : "Dortmund, Germany"
   email            :
   links:
