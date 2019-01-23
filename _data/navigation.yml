@@ -7,6 +7,8 @@ main:
   - title: "Blog"
     url: /blog/
   - title: "CV"
-    url: /assets/docs/miehl_cv.pdf
+    url: /cv/
+  #- title: "CV"
+  #  url: /assets/docs/miehl_cv.pdf
   #- title: "Contact"
   #  url: /contact/
