@@ -3,9 +3,6 @@ title: " "
 permalink: /cv/
 ---
 
-[Typical CV in PDF form](/assets/docs/miehl_cv.pdf)
-
-
 # <i class="fa fa-user"></i> Career profile
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
