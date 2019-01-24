@@ -7,20 +7,24 @@ toc_sticky: true
 #toc_label: "Unique Title"
 ---
 
-# <i class="fa fa-user"></i> Career objective
+# <i class="fa fa-fw fa-crosshairs"></i> Career objective
+Help create a sustainable future by delivering working, resilient, and easy to use software.
 
 
-# <i class="fa fa-user"></i> Core qualifications
+# <i class="fas fa-fw fa-user-check"></i> Core qualifications
+- Lorem ipsum
+- Lorem ipsum
+- Lorem ipsum
 
 
-# <i class="fa fa-user"></i> Career profile
+# <i class="fa fa-fw fa-user"></i> Career profile
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
-# <i class="fas fa-graduation-cap"></i> Education
+# <i class="fas fa-fw fa-graduation-cap"></i> Education
 **Diploma in Electrical Engineering**  
 University of Applied Science Lübeck, Germany  
 2006 - 2010
@@ -30,7 +34,7 @@ Milwaukee School of Engineering, USA
 2009 - 2010
 
 
-# <i class="fa fa-briefcase"></i> Experience
+# <i class="fa fa-fw fa-briefcase"></i> Experience
 **Junior Developer**  
 **C/C++ for embedded systems**  
 Sept. 2015 - Present  
@@ -54,18 +58,18 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
-# <i class="fas fa-users"></i> Voluntary work
+# <i class="fas fa-fw fa-users"></i> Voluntary work
 **#StopWatchingUs Lübeck**  
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 **Freifunk Lübeck**  
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
-**WebMontag organizer**  
+**WebMontag Lübeck**  
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
-# <i class="fa fa-heart"></i> Favourites
+# <i class="fa fa-fw fa-heart"></i> Favourites
 **Technical topics**  
 embedded systems, TDD, CI/CD, Z-Wave, clean code
 
