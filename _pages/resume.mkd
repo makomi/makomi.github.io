@@ -1,11 +1,17 @@
 ---
 title: " "
-permalink: /cv/
-#excerpt: "Curriculum vitae"
+permalink: /resume/
+#excerpt: "Résumé"
 toc: true
 toc_sticky: true
 #toc_label: "Unique Title"
 ---
+
+# <i class="fa fa-user"></i> Career objective
+
+
+# <i class="fa fa-user"></i> Core qualifications
+
 
 # <i class="fa fa-user"></i> Career profile
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
