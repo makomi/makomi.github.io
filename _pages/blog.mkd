@@ -3,6 +3,8 @@ title: "Blog"
 permalink: /blog/
 ---
 
+[Categories and tags]({{ "/topics/" | relative_url }})
+
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
