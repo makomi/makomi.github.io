@@ -1,6 +1,10 @@
 ---
 title: " "
 permalink: /cv/
+#excerpt: "Curriculum vitae"
+toc: true
+toc_sticky: true
+#toc_label: "Unique Title"
 ---
 
 # <i class="fa fa-user"></i> Career profile
@@ -44,12 +48,20 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
-# <i class="fa fa-heart"></i> Other interests
-**WebMontag Organizer**  
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-
+# <i class="fas fa-users"></i> Voluntary work
 **#StopWatchingUs Lübeck**  
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 **Freifunk Lübeck**  
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+
+**WebMontag organizer**  
+Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+
+
+# <i class="fa fa-heart"></i> Favourites
+**Technical topics**  
+embedded systems, TDD, CI/CD, Z-Wave, clean code
+
+**Software**  
+i3wm, Git, Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
