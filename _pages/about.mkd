@@ -12,4 +12,4 @@ My motivation is fueled by understanding how things work, writing working, well 
 
 I have been practicing [*vipassanā*](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [*S.&nbsp;N.&nbsp;Goenka*](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam&nbsp;Harris explains *vipassanā's* scientific approach, the basic practice, and its benefits.
 
-**Get in touch** if you are interested in a collaboration or would like to know more about one of my [projects]({{ "/projects/" | relative_url }}) or [topics I write about]({{ "/tags/" | relative_url }}).
+**Get in touch** if you are interested in a collaboration or would like to know more about one of my [projects]({{ "/projects/" | relative_url }}) or [topics I write about]({{ "/topics/" | relative_url }}).
