@@ -11,16 +11,19 @@ toc_sticky: true
 Help create a sustainable future by delivering working, resilient, and easy to use software.
 
 
+# <i class="fas fa-fw fa-check"></i> Core qualifications
+- Ability to write well structured, readable code with a less than average amount of bugs---according to my co-workers.
+- Basic knowledge of the Z-Wave protocol
+- Git fluency
+- Debian GNU/Linux experience as a user and administrator
+
+
 # <i class="fas fa-fw fa-user-check"></i> Core personality traits
 - Diligent
+- Tendency to focus on details
+- Exceptionally good in finding mistakes/ inconsistencies
 - Eager to learn and improve
-- Reliable
-
-
-# <i class="fas fa-fw fa-user-check"></i> Core qualifications
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
+- Desire to share my know-how
 
 
 # <i class="fa fa-fw fa-user"></i> Career profile
