@@ -1,0 +1,8 @@
+---
+title: "Topics I write about"
+permalink: /topics/
+---
+
+{% include category-list.html %}
+
+{% include tag-list.html %}
