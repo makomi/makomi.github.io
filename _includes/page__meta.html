@@ -5,8 +5,14 @@
       {% assign date = document.date %}
       <span class="page__meta-date">
         <i class="far {% if include.type == 'grid' and document.read_time and document.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
-        <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
+        <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%Y-%m-%d" }}</time>
       </span>
+    {% endif %}
+
+    {% if page.last_modified_at %}
+      <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time></p>
+    {% elsif page.date %}
+      <p class="page__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time></p>
     {% endif %}
 
     {% if document.read_time and document.show_date %}<span class="page__meta-sep"></span>{% endif %}
