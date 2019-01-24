@@ -6,8 +6,8 @@ main:
     url: /projects/
   - title: "Blog"
     url: /blog/
-  - title: "CV"
-    url: /cv/
+  - title: "Résumé"
+    url: /resume/
   #- title: "CV"
   #  url: /assets/docs/miehl_cv.pdf
   #- title: "Contact"
