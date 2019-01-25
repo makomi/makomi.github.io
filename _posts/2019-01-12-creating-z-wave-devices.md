@@ -3,7 +3,7 @@ title: Creating Z-Wave devices
 excerpt: "Everything one needs to know to start building Z-Wave devices."
 toc: true
 toc_sticky: true
-#toc_label: "Unique Title"
+last_modified_at: "2019-01-23"
 ---
 
 **TL;DR**  
