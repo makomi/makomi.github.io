@@ -6,10 +6,10 @@ I am an electrical engineer interested in electronics, system level C/C++ progra
 
 Currently, I work as a C/C++ embedded software engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers.
 My tasks range from solving system level driver issues to implementing application level feature requests.  
-From time to time I support the hardware side by specifying aspects of the schematic and PCB layout relevant to my part of the project as well as checking and debugging the result.
+From time to time I support the hardware side by specifying aspects of the schematic and <abbr title="Printed Circuit Board">PCB</abbr> layout relevant to my part of the project as well as checking and debugging the result.
 
 My motivation is fueled by understanding how things work, writing working, well structured, readable software, and removing inefficiencies as well as causes of error from the processes I am part of.
 
-I have been practicing [*vipassanā*](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [*S.&nbsp;N.&nbsp;Goenka*](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam&nbsp;Harris explains *vipassanā's* scientific approach, the basic practice, and its benefits.
+I have been practicing [<abbr title="(Pāli) 'insight into the true nature of reality'">*vipassanā*</abbr>](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [*S.&nbsp;N.&nbsp;Goenka*](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam&nbsp;Harris explains *vipassanā's* scientific approach, the basic practice, and its benefits.
 
 **Get in touch** if you are interested in a collaboration or would like to know more about one of my [projects]({{ "/projects/" | relative_url }}) or [topics I write about]({{ "/topics/" | relative_url }}).
