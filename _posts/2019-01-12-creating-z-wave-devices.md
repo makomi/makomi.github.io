@@ -1,6 +1,11 @@
 ---
 title: Creating Z-Wave devices
 excerpt: "Everything one needs to know to start building Z-Wave devices."
+categories:
+  - Z-Wave
+tags:
+  - introduction
+  - Geek Magazine
 toc: true
 toc_sticky: true
 last_modified_at: "2019-01-23"
