@@ -1,19 +1,11 @@
 {% if page.last_modified_at %}
   <p class="page__date">
     <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
-    <time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%Y-%m-%d" }}
-    </time>
-    ({{ site.data.ui-text[site.locale].date_label | default: "updated:" }}
-    <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">
-      {{ page.last_modified_at | date: "%Y-%m-%d" }}
-    </time>)
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+    <small>({{ site.data.ui-text[site.locale].date_label | default: "updated:" }} <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%Y-%m-%d" }}</time>)</small>
   </p>
 {% elsif page.date %}
   <p class="page__date">
-    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i>
-    <time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%Y-%m-%d" }}
-    </time>
+    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
   </p>
 {% endif %}
