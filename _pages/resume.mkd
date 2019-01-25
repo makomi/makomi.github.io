@@ -4,22 +4,28 @@ permalink: /resume/
 #excerpt: "Résumé"
 toc: true
 toc_sticky: true
-#toc_label: "Unique Title"
 ---
 
 # <i class="fa fa-fw fa-crosshairs"></i> Career objective
-Help create a sustainable future by delivering working, resilient, and easy to use software.
+Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---in that order.
 
 
-# <i class="fas fa-fw fa-check"></i> Core qualifications
-- Ability to write well structured, readable code with a less than average amount of bugs---according to my co-workers.
-- Basic knowledge of the Z-Wave protocol
-- Git fluency
-- Debian GNU/Linux experience as a user and administrator
+# <i class="fas fa-fw fa-tools"></i> Tech stack I am comfortable with
+**Languages**  
+C99, C11, C++11 (working knowledge), Python 2 and 3, BASH scripts, LaTeX
+
+**Tools**  
+Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD
+
+**Protocols**  
+Z-Wave (working knowledge)
+
+**Operating systems**  
+Debian GNU/Linux (user/admin), Microsoft Windows
 
 
 # <i class="fas fa-fw fa-user-check"></i> Core personality traits
-- Diligent
+- Diligent, rigorous, and organized
 - Tendency to focus on details
 - Exceptionally good in finding mistakes/ inconsistencies
 - Eager to learn and improve
@@ -54,6 +60,8 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+
+Typical projects I am working on professionally
 
 
 **Startup**  
