@@ -1,4 +1,4 @@
-Welcome to my blog and CV.
+Welcome to my blog and résumé.
 
 ## Pull requests are welcome
 Please send me a patch if you find spelling, grammar, or other errors and feel like correcting them. Thanks!
