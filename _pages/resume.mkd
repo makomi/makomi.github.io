@@ -87,7 +87,7 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
-# <i class="fa fa-fw fa-heart"></i> Favourites
+# <font color="red"><i class="fa fa-fw fa-heart"></i></font> Favourites
 **Technical topics**  
 embedded systems, TDD, CI/CD, Z-Wave, clean code
 
