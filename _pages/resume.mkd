@@ -15,7 +15,8 @@ Help create a sustainable future by delivering operational, maintainable, secure
 C99, C11, C++11 (working knowledge), Python 2 and 3, BASH scripts, LaTeX
 
 **Tools**  
-Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD
+Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD.  
+Working knowledge of Make and SCons.
 
 **Protocols**  
 Z-Wave (working knowledge)
