@@ -12,14 +12,15 @@ Help create a sustainable future by delivering operational, maintainable, secure
 
 # <i class="fas fa-fw fa-tools"></i> Tech stack I am comfortable with
 **Languages**  
-C99, C11, C++11 (working knowledge), Python 2 and 3, BASH scripts, LaTeX
+C99, C11, BASH scripts, LaTeX.  
+Working knowledge of C++11 and Python.
 
 **Tools**  
 Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD.  
 Working knowledge of Make and SCons.
 
 **Protocols**  
-Z-Wave (working knowledge)
+Working knowledge of Z-Wave.
 
 **Operating systems**  
 Debian GNU/Linux (user/admin), Microsoft Windows
