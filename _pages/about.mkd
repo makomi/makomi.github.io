@@ -2,13 +2,13 @@
 permalink: /
 ---
 
-I am an electrical engineer interested in electronics, system level C/C++ programming, psychology, politics, and how these areas influence each other.
+I am an electrical engineer with an interest in electronics and embedded C/C++ programming. I also spend time thinking about psychology, politics, and how all of the above interacts.
 
-My motivation is fueled by understanding how systems function, writing working, well structured, readable software, and removing inefficiencies as well as causes of error from the processes I am part of.
+What motivates me is my desire for understanding how systems function, for writing working, well structured, readable software, and for removing inefficiencies as well as causes of error from the processes I am part of.
 
 Currently, I work as a C/C++ embedded software engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for solar thermal controls as well as room controllers.
-My tasks range from solving system level driver issues to implementing application level feature requests.  
-From time to time I support the hardware side by specifying aspects of the schematic and <abbr title="Printed Circuit Board">PCB</abbr> layout relevant to my part of the project as well as checking and debugging the result.
+My tasks range from building middleware to implementing application level feature requests.  
+From time to time I support the hardware side by specifying aspects of the schematic and <abbr title="Printed Circuit Board">PCB</abbr> layout relevant to my part of the project as well as checking and debugging the result. I am in contact with external partners like RF labs or test houses to prepare our devices for EMC tests or help the certification process along.
 
 I have been practicing [<abbr title="(Pāli) 'insight into the true nature of reality'">*vipassanā*</abbr>](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [*S.&nbsp;N.&nbsp;Goenka*](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam&nbsp;Harris explains *vipassanā's* scientific approach, the basic practice, and its benefits.
 
