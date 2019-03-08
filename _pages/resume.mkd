@@ -97,7 +97,10 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 
 # <font color="#bd2727"><i class="fa fa-fw fa-heart"></i></font> Favourites
 **Technical topics**  
-embedded systems, TDD, CI/CD, Z-Wave, clean code
+embedded systems, TDD, CI/CD, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, OPSEC, FOSS
+
+**Non-technical topics**
+sci-fi books, meditation
 
 **Software**  
-i3wm, Git, Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
+i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
