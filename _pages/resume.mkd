@@ -27,11 +27,12 @@ Debian GNU/Linux (user/admin), Microsoft Windows
 
 
 # <i class="fas fa-fw fa-user-check"></i> Core personality traits
-- Diligent, rigorous, and organized
-- Tendency to focus on details
-- Exceptionally good in finding mistakes/ inconsistencies
+- Comfortable taking the initiative
+- Conscientious, diligent, and organized
+- Talent for finding and thus preventing defects
+- Perseverant
 - Eager to learn and improve
-- Desire to share my know-how
+- Desire to share/ apply what I learned
 
 
 # <i class="fa fa-fw fa-user"></i> Career profile
