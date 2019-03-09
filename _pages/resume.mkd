@@ -10,6 +10,16 @@ toc_sticky: true
 Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---in that order.
 
 
+# <i class="fa fa-fw fa-user"></i> Career profile
+Electrical Engineer with three years of experience in programming C/C++ middleware and application level software for heating controllers and room thermostats using [atomthreads](https://atomthreads.com/) and [FreeRTOS](https://freertos.org/).
+
+Increased productivity by organizing <abbr title="A 'fortnight' is a unit of time equal to 14 days.">fortnightly</abbr> developer meetings that facilitate internal knowledge transfer and documenting relevant knowledge as well as answers to recurring questions.
+
+Improved software quality by furthering the adoption of software development best practices and guiding the development of key features that help us deliver a working product.
+
+Able to work in German and English.
+
+
 # <i class="fas fa-fw fa-tools"></i> Tech stack I am comfortable with
 **Languages**  
 C99, BASH scripts, LaTeX.  
@@ -39,13 +49,6 @@ Debian GNU/Linux (user/admin), Microsoft Windows
 - Perseverant
 - Eager to learn and improve
 - Desire to share/ apply what I learned
-
-
-# <i class="fa fa-fw fa-user"></i> Career profile
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
 
 
 # <i class="fas fa-fw fa-graduation-cap"></i> Education
