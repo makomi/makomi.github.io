@@ -1,6 +1,6 @@
 ---
 title: Creating Z-Wave devices
-excerpt: "Everything one needs to know to start building Z-Wave devices."
+excerpt: Everything one needs to know to start building Z-Wave devices.
 categories:
   - Z-Wave
 tags:
