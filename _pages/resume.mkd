@@ -49,57 +49,53 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
 
 
 # <i class="fas fa-fw fa-graduation-cap"></i> Education
-**Diploma in Electrical Engineering**  
-University of Applied Science Lübeck, Germany  
-2006 - 2010
-
-**BSc Electrical Engineering**  
+<small>11/2009 -- 10/2010</small>  
+**BSc in Electrical Engineering**  
 Milwaukee School of Engineering, USA  
-2009 - 2010
+
+<small>09/2005 -- 10/2010</small>  
+**Diploma in Electrical Engineering**  
+University of Applied Sciences Lübeck, Germany  
 
 
 # <i class="fa fa-fw fa-briefcase"></i> Experience
-**Junior Developer**  
-**C/C++ for embedded systems**  
-Sept. 2015 - Present  
-SOREL GmbH  
-Wetter (Ruhr)
+<small>Since 09/2015</small>  
+**Junior C/C++ software engineer for embedded systems**  
+[SOREL GmbH](https://sorel.de/)
 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+*In general:* Maintenance and development of middleware and application logic for STM32 F7 based embedded systems in C and C++ using FreeRTOS.
 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-
-Typical projects I am working on professionally
+*Currently:* Responsible for the integration of Z-Wave into a new room thermostat product. This includes the translation of application requirements into hardware and software specifications, management and quality control of the external Z-Wave developer's work, hardware debugging and protocol testing including on-site at an external RF lab and another test house, as well as implementation of a generic network interface for communication between the Z-Wave transport layer and the resources close to the application layer.
 
 
-**Startup**  
-2012 - 2015  
-Ingenieurbüro  
-Lübeck
+<small>03/2012 -- 03/2015</small>  
+**Camera drone service provider**  
+[Ingenieurbüro Kannenberg & Miehl GbR](http://airde.net)
 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+*Services:* Images, videos, panoramic tours, surveying, 3D models.
 
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+*Responsibilities:* Organisation (finances, external service providers), IT infrastructure (servers, services), flight law protection of operations (continuous research, communication with authorities), customer support, marketing and contact management, development of products for the surveying industry, image editing, software development (BASH scripts, embedded C, GNU Octave).
 
 
 # <i class="fas fa-fw fa-users"></i> Voluntary work
-**#StopWatchingUs Lübeck**  
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+**[#StopWatchingUs Lübeck](http://wiki.chaotikum.org/projekte:demonstration:stopwatchingus/)**  
+Establishment of the group; organization of meetings, CryptoParties, and protests; writing texts and doing presentations. See the project's website for details and material.
 
-**Freifunk Lübeck**  
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+**[Freifunk Lübeck](http://luebeck.freifunk.net/)**  
+`fastd` key management, conflict resolution, establishing monthly community meetings as a basis for continued reflection and project improvement
 
-**WebMontag Lübeck**  
-Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+**[Chaotikum](https://chaotikum.org/)**  
+Help maintain the IT infrastructure, organize the first national "Chaos macht Schule" meeting in Lübeck, and administer some of the mailing lists.
+
+**[WebMontag Lübeck](http://webmontag.de/location/luebeck/2015-07-20)**  
+Establishment of the group and organization of the first five events ... until I moved away.
 
 
 # <font color="#bd2727"><i class="fa fa-fw fa-heart"></i></font> Favourites
 **Technical topics**  
 embedded systems, TDD, CI/CD, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, OPSEC, FOSS
 
-**Non-technical topics**
+**Non-technical topics**  
 sci-fi books, meditation
 
 **Software**  
