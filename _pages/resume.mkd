@@ -11,7 +11,7 @@ Help create a sustainable future by delivering operational, maintainable, secure
 
 
 # <i class="fa fa-fw fa-user"></i> Career profile
-Electrical Engineer with three years of experience in programming C/C++ middleware and application level software for heating controllers and room thermostats using [atomthreads](https://atomthreads.com/) and [FreeRTOS](https://freertos.org/).
+Embedded software engineer with three years of experience in programming C/C++ middleware and application level software for heating controllers and room thermostats using [atomthreads](https://atomthreads.com/) and [FreeRTOS](https://freertos.org/).
 
 Increased productivity by organizing <abbr title="A 'fortnight' is a unit of time equal to 14 days.">fortnightly</abbr> developer meetings that facilitate internal knowledge transfer and documenting relevant knowledge as well as answers to recurring questions.
 
@@ -99,7 +99,7 @@ Establishment of the group and organization of the first five events ... until I
 embedded systems, TDD, CI/CD, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, OPSEC, FOSS
 
 **Non-technical topics**  
-sci-fi books, meditation
+sci-fi books, meditation, psychology, politics, society
 
 **Software**  
 i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
