@@ -1,6 +1,6 @@
 ---
 permalink: /imprint/
-title: "Imprint"
+title: "Impressum"
 ---
 
 *[German law demands this]*
