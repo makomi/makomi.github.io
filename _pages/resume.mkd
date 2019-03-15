@@ -84,11 +84,11 @@ University of Applied Sciences Lübeck, Germany
 **[#StopWatchingUs Lübeck](http://wiki.chaotikum.org/projekte:demonstration:stopwatchingus/)**  
 Establishment of the group; organization of meetings, CryptoParties, and protests; writing texts and doing presentations. See the project's website for details and material.
 
+**[Chaotikum](https://chaotikum.org/)**  
+Help maintain the IT infrastructure, organize Lübeck's first national "Chaos macht Schule" meeting, and administer some of the mailing lists.
+
 **[Freifunk Lübeck](http://luebeck.freifunk.net/)**  
 `fastd` key management, conflict resolution, establishing monthly community meetings as a basis for continued reflection and project improvement
-
-**[Chaotikum](https://chaotikum.org/)**  
-Help maintain the IT infrastructure, organize the first national "Chaos macht Schule" meeting in Lübeck, and administer some of the mailing lists.
 
 **[WebMontag Lübeck](http://webmontag.de/location/luebeck/2015-07-20)**  
 Establishment of the group and organization of the first five events ... until I moved away.
@@ -99,7 +99,7 @@ Establishment of the group and organization of the first five events ... until I
 embedded systems, TDD, CI/CD, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, OPSEC, FOSS
 
 **Non-technical topics**  
-sci-fi books, meditation, psychology, politics, society
+sci-fi books, meditation, psychology, society
 
 **Software**  
 i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
