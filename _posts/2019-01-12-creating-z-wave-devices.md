@@ -75,17 +75,17 @@ A very important aspect in the development of Z-Wave is **backward compatibility
 ## Chip variants
 <!--TODO: Update the links. -->
 Z-Wave chips are available in two versions:
-- [SD3502](http://z-wave.sigmadesigns.com/docs/brochures/SD3502_br.pdf), 48-QFN 7x7&nbsp;mm
-- [SD3503](http://z-wave.sigmadesigns.com/docs/brochures/SD3503_br.pdf), 32-QFN 5x5&nbsp;mm (reduced functionality compared to SD3502)
+- [SD3502](https://www.silabs.com/documents/login/data-sheets/DSH12206-13.pdf), 48-QFN 7x7&nbsp;mm
+- [SD3503](https://www.silabs.com/documents/login/data-sheets/DSH12469-15.pdf), 32-QFN 5x5&nbsp;mm (reduced functionality compared to SD3502)
 
 <!--TODO: Check translation of the first sentence. -->
 The following <abbr title="system in package">SiP</abbr> modules are also available. They include a quartz and need minimal setup for the chip to function:
-- [ZM5101](http://z-wave.sigmadesigns.com/docs/brochures/ZM5101_br.pdf), 56-QFN 8x8&nbsp;mm, compatible with ZM4101 (4<sup>th</sup> generation)
-- [ZM5202](http://z-wave.sigmadesigns.com/docs/brochures/ZM5202_br.pdf), PCB 12.5x13.6&nbsp;mm, based on SD3502, compatible with ZM3102 (3<sup>rd</sup> generation)
-- [ZM5304](http://z-wave.sigmadesigns.com/docs/brochures/ZM5304_br.pdf), PCB 27x15.2&nbsp;mm, based on SD3503, includes EEPROM memory, SAW filter, spiral antenna, and protective cover (for "modems", i.e. for Z-Wave controllers)
+- [ZM5101](https://www.silabs.com/documents/login/data-sheets/DSH12625-9.pdf), 56-QFN 8x8&nbsp;mm, compatible with ZM4101 (4<sup>th</sup> generation)
+- [ZM5202](https://www.silabs.com/documents/login/data-sheets/DSH12435-15.pdf), PCB 12.5x13.6&nbsp;mm, based on SD3502, compatible with ZM3102 (3<sup>rd</sup> generation)
+- [ZM5304](https://www.silabs.com/documents/login/data-sheets/DSH12461-13.pdf), PCB 27x15.2&nbsp;mm, based on SD3503, includes EEPROM memory, SAW filter, spiral antenna, and protective cover (for "modems", i.e. for Z-Wave controllers)
 
 And the Mitsumi series:
-- [WML-C84](http://www.mitsumi.co.jp/latest/Catalog/pdf/commun_wml_c84_e.pdf), 56-QFN 8x8&nbsp;mm, drop-in replacement for the ZM5101
+- WML-C84, 56-QFN 8x8&nbsp;mm, drop-in replacement for the ZM5101
 - WML-C85, 56-QFN 8x8&nbsp;mm, in comparision to C84 it has an integrated SAW filter
 - WML-C86, 56-QFN 15x15&nbsp;mm, integrated SAW filter and EEPROM, increased TX power and RX sensitivity, protective cover
 - WML-C87, 56-QFN 15x15&nbsp;mm, integrated SAW filter and EEPROM, increased sensitivity RX, protective cover
