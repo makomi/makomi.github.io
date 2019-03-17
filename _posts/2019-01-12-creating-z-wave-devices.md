@@ -10,13 +10,13 @@ last_modified_at: "2019-03-17"
 ---
 
 **TL;DR**  
-*This post is just a draft for now.*
-
 An overview of what it means to build a Z-Wave slave device based on the 500 Series chips without a separate host MCU, i.e. writing code that runs directly *on the Z-Wave chip*.
 
 Have a look at the [glossary](#glossary) at the end of this article, in case you wonder what a certain acronym stands for.
 
-**Please note:** This is a translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)" published via *habr* on **January&nbsp;8, 2016**. It was **written by [Сергей Полторак](https://www.facebook.com/serguei.poltorak)** who founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009. I originally read its English translation "[As device Z-Wave become](http://geek-mag.com/posts/268602/)" published at around the same time in *Geek Magazine*. At the beginning of 2019, *Geek Magazine's* domain went offline, leaving only the [Wayback Machine](https://web.archive.org/web/20170919095954/http://geek-mag.com/posts/268602/) to still read and discover the translation.  
+All images are 
+
+**Please note:** This is a translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)". The original article was published via *habr* by [Сергей Полторак](https://www.facebook.com/serguei.poltorak) on **January&nbsp;8, 2016** who founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009. I originally read its English translation "[As device Z-Wave become](http://geek-mag.com/posts/268602/)" published at around the same time via *Geek Magazine*. However, at the beginning of 2019, *Geek Magazine's* domain went offline, leaving only the [Wayback Machine](https://web.archive.org/web/20170919095954/http://geek-mag.com/posts/268602/) to still read and discover the translation.  
 I decided to publish another English translation to improve the odds for all non-Russian readers to benefit from the article's breadth and unique focus on practical knowledge. Since I don't speak Russian, I am using the original English translation and [DeepL Translate](https://deepl.com/translate/) to write this text. I hope you like it.  
 {: .notice--info}
 
