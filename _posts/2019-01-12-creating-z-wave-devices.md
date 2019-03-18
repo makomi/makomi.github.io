@@ -68,7 +68,6 @@ Most important of all, the chip has a radio transceiver built into it. However, 
 We are confident that it is capable of a larger frequency range but no public description of the RF part is available and hence no way of knowing about any other scenarios in which the radio transceiver might be used. Obviously, it's a typical SDR chip for which Sigma Designs did not reinvent the wheel.
 
 ## Suppliers
-<!--TODO: Check translation of the first sentence. -->
 The chips' **IP is owned by Sigma Designs** and licensed to Japanese company Mitsumi. The 5<sup>th</sup> generation of chips is currently being produced.  
 A very important aspect in the development of Z-Wave is **backward compatibility**. This is not only true for the software level but also with regard to the chip's form factor and chip characteristics. The current generation of modules is pin-to-pin compatible with all previous generations. The allows you to quickly upgrade your existing devices without changing the circuitry or rebooting the boards.
 
@@ -77,8 +76,7 @@ Z-Wave chips are available in two versions:
 - [SD3502](https://www.silabs.com/documents/login/data-sheets/DSH12206-13.pdf), 48-QFN 7x7&nbsp;mm
 - [SD3503](https://www.silabs.com/documents/login/data-sheets/DSH12469-15.pdf), 32-QFN 5x5&nbsp;mm (reduced functionality compared to SD3502)
 
-<!--TODO: Check translation of the first sentence. -->
-The following <abbr title="system in package">SiP</abbr> modules are also available. They include a quartz and need minimal setup for the chip to function:
+The following <abbr title="system in package">SiP</abbr> modules are available as well. They include a quartz and need minimal setup for the chip to function:
 - [ZM5101](https://www.silabs.com/documents/login/data-sheets/DSH12625-9.pdf), 56-QFN 8x8&nbsp;mm, compatible with ZM4101 (4<sup>th</sup> generation)
 - [ZM5202](https://www.silabs.com/documents/login/data-sheets/DSH12435-15.pdf), PCB 12.5x13.6&nbsp;mm, based on SD3502, compatible with ZM3102 (3<sup>rd</sup> generation)
 - [ZM5304](https://www.silabs.com/documents/login/data-sheets/DSH12461-13.pdf), PCB 27x15.2&nbsp;mm, based on SD3503, includes EEPROM memory, SAW filter, spiral antenna, and protective cover (for "modems", i.e. for Z-Wave controllers)
@@ -98,8 +96,7 @@ The modules with integrated SAW filter are available in three versions for three
 
 Many of these modules can be purchased via DigiKey but Sigma Designs sells chips in large volumes only after prior arrangement.
 
-Some manufacturers decided to make their own modules. For example, Philio Tech manufactures the MD003 (analogue of ZM5304 based on SD3503, but without antenna), MD006 (based on SD3503), and MD008 (something in between ZM5101 and ZM5202 based on SD3502). Philio PST-02 device based on MD008 is mounted SDBS.
-<!-- TODO: How can the last sentence be translated properly? -->
+Some manufacturers decided to make their own modules. For example, Philio Tech manufactures the MD003 (analogue of ZM5304 based on SD3503, but without antenna), MD006 (based on SD3503), and MD008 (something in between ZM5101 and ZM5202 based on SD3502). The first picture at the beginning shows the Philio PST-02 which is based on MD008.
 
 ## DevKit
 Sigma Designs also offers a developer kit:
@@ -107,7 +104,7 @@ Sigma Designs also offers a developer kit:
 - Programmer (Z-Wave chips are programmed with a special programmer---there is a choice on the market: this one is from Sigma Designs, more suitable for production from us, Z-Wave.Me, and quite industrial from Equinox)
 - Sniffer (for capturing Z-Wave frames---useful for debugging)
 - USB stick for the central controller
-- Several sensors and performers, <!-- TODO: How to translate this? -->
+- Several sensors and actuators,
 - Windows based software for programmer, sniffer, controller, and other supporting tools
 - Z-Wave SDK for creating firmware for Z-Wave chips (see below)
 - All sorts of wires and power supplies
@@ -130,7 +127,7 @@ The package is contains two parts: a generic one for all world regions and a reg
   <figcaption>World region specific Z-Wave DevKit</figcaption>
 </figure>
 
-The cost of a package ranges from **$1500 to $3500** depending on the number of developer boards and programmers and the presence or absence of sensors/performers. <!-- TODO: How to translate this? -->
+A DevKit costs between **$1500 to $3500** depending on the number of developer boards and programmers as well as the presence or absence of sensors/actuators.
 
 ## Legal considerations
 Patents, licenses, and <abbr title="non-disclosure agreement">NDAs</abbr> do not allow the use of Z-Wave chips and modules for other purposes than Z-Wave. Also, **Z-Wave devices can't be made on a non-Z-Wave chip**. This allows Sigma Designs to include the license fees (paying for protocol development, software, utilities, marketing) as part of the cost of chips and modules.
