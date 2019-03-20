@@ -6,24 +6,30 @@ categories: [Z-Wave, product development]
 tags: [habr, Geek Magazine, Geek Times, Z-Wave.me, introduction, Z-Wave 500 Series, IoT]
 toc: true
 toc_sticky: true
-last_modified_at: "2019-03-18"
+last_modified_at: "2019-03-20"
 ---
 
-**TL;DR**  
+**Description**  
 An overview of what it means to build a Z-Wave *slave device* based on the *500 Series* chips without a separate host MCU, i.e. writing code that runs directly *on the Z-Wave chip*.
 
-Have a look at the [glossary](#glossary) at the end of this blog post, in case you are wondering what a certain acronym stands for.
+**Summary**  
+5<sup>th</sup> generation Z-Wave chips have a modified 8051 core and offer a good selection of peripherals. Currently, all chips are manufactured by Silicon Labs and are available in three variants to accomodate the RF regulations of different countries. Z-Wave products must only be built with official Z-Wave chips and must be certified by a test house prior to market launch.  
+When building applications that run directly on the Z-Wave chip, one is expected to use [KEIL&nbsp;C51](http://www.keil.com/c51/) to compile and link the code, since the precompiled libraries required for accessing the network are compiled with KEIL as well. Furthermore, it is recommended to start one's application by building on top of an existing example application. Unforuntately, the chips have no dedicated debugging interface, so one has to use e.g. UART or debug/test the hardware independent code in a different environment.  
+Z-Wave device development requires a substantial amount of money for tools, membership fees, and certification as well as time to learn the technology. On the plus side, you get access to the Z-Wave ecosystem containing thousands of interoperable devices as well as some [other benefits](https://www.silabs.com/products/wireless/mesh-networking/z-wave/benefits). Evaluate whether this investment makes sense for you. Talk to a Z-Wave FAE if you are unsure.
+
+Have a look at the [glossary](#glossary) at the end of this blog post, in case you are wondering what an acronym stands for.
 
 All images are provided by courtesy of Sigma Designs and Z-Wave.me.
 
-**Please note:** This is a translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)". The original article was published via *habr* by <abbr title="Serguei Poltorak a.k.a. PoltoS">[Сергей Полторак](https://www.facebook.com/serguei.poltorak)</abbr> on **January&nbsp;8, 2016**. Сергей founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009. I originally read its English translation "[As device Z-Wave become](http://geek-mag.com/posts/268602/)" published via *Geek Magazine*. However, at the beginning of 2019, *Geek Magazine's* domain went offline, leaving only the [Wayback Machine](https://web.archive.org/web/20170919095954/http://geek-mag.com/posts/268602/) to still read and discover the translation.  
+**Please note:** This is a translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)". The original article was published via *habr* by <abbr title="Serguei Poltorak a.k.a. PoltoS">[Сергей Полторак](https://www.facebook.com/serguei.poltorak)</abbr> on *January&nbsp;8, 2016*. Сергей founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009.  
+I originally read its English translation "[As device Z-Wave become](http://geek-mag.com/posts/268602/)" published via *Geek Magazine*. However, at the beginning of 2019, *Geek Magazine's* domain went offline, leaving only the [Wayback Machine](https://web.archive.org/web/20170919095954/http://geek-mag.com/posts/268602/) to still read and discover the translation.  
 I decided to publish another English translation to improve the odds for all non-Russian readers to benefit from the article's breadth and unique focus on practical knowledge. Since I don't speak Russian, I am using the original English translation and [DeepL Translate](https://deepl.com/translate/) to write this text.
 {: .notice--info}
 
 **By the way:** Dec&nbsp;18, 2017, [Silicon Labs aquired Sigma Designs](https://www.electronicdesign.com/embedded-revolution/silicon-labs-acquired-sigma-designs-282-million-heres-why), *Electronic Design*.
 {: .notice--info}
 
-**Warning:** The Z-Wave specification, hardware, and processes changed a lot since the original post was written in January 2016. See the [Silicon Labs website](https://www.silabs.com/products/wireless/mesh-networking/z-wave) for the latest information.
+**Warning:** The Z-Wave specification, hardware, and processes changed quite a bit since the original post was written in January 2016. See the [Silicon Labs website](https://www.silabs.com/products/wireless/mesh-networking/z-wave) for the latest information, e.g. the [specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification) and [document search](https://www.silabs.com/support/resources.ct-manuals_user-guides.p-wireless_z-wave).
 {: .notice--warning}
 
 **<center>— beginning of translation —</center>**
@@ -32,7 +38,14 @@ I decided to publish another English translation to improve the odds for all non
 In this article we will explain how Z-Wave devices are created.
 The circuit engineering and programming of Z-Wave devices is quite similar to devices based on Arduino, AVR, or PIC. However, there are of course differences and this article will cover them.
 
+{% capture fig_img %}
 ![Philio]({{ "/assets/images/zwave/philio.png" | relative_url }})
+{% endcapture %}
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>Philio PST-02 (with Mitsumi MD008)</figcaption>
+</figure>
+
 
 Since I already wrote [about the Z-Wave protocol](https://habr.com/en/company/zwave/blog/163387/), I will not cover any protocol details and instead focus more on the hardware aspects. **This article will only cover the 5<sup>th</sup> generation chips and modules** that were released more than two&nbsp;years ago.
 
@@ -47,7 +60,7 @@ Since I already wrote [about the Z-Wave protocol](https://habr.com/en/company/zw
 - 1 USB (serial only)
 - 4 ADCs 12/8&nbsp;bit
 - 1 scanner for 88 keys (with the ability to function while in deep sleep mode)
-- 1 TRIAC controller generator with ZEROX (zero cross) detector
+- 1 <abbr title="TRiode for Alternating Current">TRIAC</abbr> controller generator with <abbr title="Zero Cross">ZEROX</abbr> detector
 - 5 PWMs with 16&nbsp;bit resolution
 - 4 IR controllers and 1 IR decoder
 - Loader (enabled by RESET pin or from the code by writing to the appropriate SFR register) for flashing via SPI or UART, as well as the ability to reprogram itself. Overwriting of flash memory is used for <abbr title="over the air">OTA</abbr> firmware updates.
@@ -96,20 +109,25 @@ The modules with integrated SAW filter are available in three versions for three
 
 Many of these modules can be purchased via DigiKey but Sigma Designs sells chips in large volumes only after prior arrangement.
 
-Some manufacturers decided to make their own modules. For example, Philio Tech manufactures the MD003 (analogue of ZM5304 based on SD3503, but without antenna), MD006 (based on SD3503), and MD008 (something in between ZM5101 and ZM5202 based on SD3502). The first picture at the beginning shows the Philio PST-02 which is based on MD008.
+Some manufacturers decided to make their own modules. For example, Philio Tech manufactures the MD003 (drop-in replacement for the ZM5304 based on SD3503, but without antenna), MD006 (based on SD3503), and MD008 (something in between ZM5101 and ZM5202 based on SD3502). The first picture at the beginning of this article shows the Philio PST-02 which is based on MD008.
 
 ## DevKit
 Sigma Designs also offers a developer kit:
 - A set of chips of different form factors, including those on developer boards, which are installed directly on the programmer (very convenient for prototyping)
-- Programmer (Z-Wave chips are programmed with a special programmer---there is a choice on the market: this one is from Sigma Designs, more suitable for production from us, Z-Wave.Me, and quite industrial from Equinox)
 - Sniffer (for capturing Z-Wave frames---useful for debugging)
-- USB stick for the central controller
-- Several sensors and actuators,
-- Windows based software for programmer, sniffer, controller, and other supporting tools
+- USB stick to run the controller
+- Several sensors and actuators
+- Windows based software for programmer, sniffer, and controller as well as supporting tools
 - Z-Wave SDK for creating firmware for Z-Wave chips (see below)
 - All sorts of wires and power supplies
+- Programmer ZDP03A
 
-The package is contains two parts: a generic one for all world regions and a regional one for your specific world region respectively allowed frequency range.
+Z-Wave chips use a **custom protocol for programming** and therefore require special programmers. Currently, there are three options:
+- The above mentioned programmer ZDP03A provided by Sigma Designs as part of the DevKit. It is only recommended for development but not production use.
+- A [programmer](https://z-wave.me/products/z-wave-production-tools/) more suitable for production is provided by us, Z-Wave.Me.
+- A variety of [rugged programmers](http://www.equinox-tech.com/products/details.asp?ID=1733) for production use are offered by Equinox.
+
+The DevKit consists of two parts: a generic one for all world regions and a regional one for your specific world region respectively allowed frequency range.
 
 {% capture fig_img %}
 ![Z-Wave DevKit (generic)]({{ "/assets/images/zwave/zwave_devkit_generic.jpg" | relative_url }})
@@ -130,7 +148,7 @@ The package is contains two parts: a generic one for all world regions and a reg
 A DevKit costs between **$1500 to $3500** depending on the number of developer boards and programmers as well as the presence or absence of sensors/actuators.
 
 ## Legal considerations
-Patents, licenses, and <abbr title="non-disclosure agreement">NDAs</abbr> do not allow the use of Z-Wave chips and modules for other purposes than Z-Wave. Also, **Z-Wave devices can't be made on a non-Z-Wave chip**. This allows Sigma Designs to include the license fees (paying for protocol development, software, utilities, marketing) as part of the cost of chips and modules.
+Patents, licenses, and <abbr title="non-disclosure agreement">NDAs</abbr> do not allow the use of Z-Wave chips and modules for other purposes than Z-Wave. Also, **Z-Wave devices must not be created on a non-Z-Wave chip**. This allows Sigma Designs to include the license fees (paying for protocol development, software, utilities, marketing) as part of the cost of chips and modules.
 
 In order to call your device Z-Wave compatible, you need to pass the **certification** (see below).
 
@@ -143,32 +161,34 @@ Let's get back to the hardware. The following image showas a typical **ZM5101 co
 
 ![complicated device schematic]({{ "/assets/images/zwave/zwave_schematic_zm5101.png" | relative_url }})
 
-The **NVM** is SPI EEPROM or flash memory of at least 16&nbsp;KB. It is necessary for storing data about network nodes, routes, and so on. It is possible to create devices without an external EEPROM (this uses a flash memory block, which reduces the space for code). EEPROM takes up one SPI and one foot for `CS`. SPI pins can be easily used as GPIO or to connect another SPI Slave while `CS` is raised to 3.3&nbsp;V. The same SPI is used to program the Z-Wave chip when `RESET` is pulled down. That's why we need a CS pull-up (ZM5101 becomes SPI Slave, and the second Slave is obviuosly not needed here).
+The **NVM** is SPI EEPROM or flash memory of at least 16&nbsp;KB. It is necessary for storing data about network nodes, routes, and so on. It is possible to create devices without an external EEPROM by using a flash memory block and thereby reducing the available code space. External EEPROM memory takes up one of the SPIs and one additional GPIO pin for `CS`. SPI pins can easily be used as GPIO or to connect another SPI Slave while `CS` is raised to 3.3&nbsp;V. The same SPI is used to program the Z-Wave chip when `RESET` is pulled down. That's why we need a CS pull-up (ZM5101 becomes SPI Slave, and the second Slave is obviously not needed here).
 
-All other pins can be used to implement the functionality of the device.
+We are free to use all remaining pins for whatever we want the device to do.
 
 Let's say we want to **create a complex device**:
-- 3 relays (using darlington ULN2003, since the current limit of 20&nbsp;mA from the ZM5101's pins is not enough for an electromagnetic relay and it will feed the relay from 5&nbsp;V or 12&nbsp;V)
 - A contact sensor
 - A light sensor (photoresistor)
 - A beautifully flashing three color LED
+- 3 relays
+
+For the relays we are going to use a darlington ULN2003, since the current limit of 20&nbsp;mA from the ZM5101's pins is not enough for an electromagnetic relay and it will supply the relay via 5&nbsp;V or 12&nbsp;V.
 
 All of this can be immediately connected to the Z-Wave chip:
-- 3 relay inputs via GPIOs, e.g. P2.0, P2.1, and P2.5. P2.2 to P2.4 occupy the EEPROM connected via SPI.
 - Dry contact sensor via `INT0` (P1.0), `INT1` (P1.1), or any other GPIO pin if it is okay for you to simply poll the GPIO instead of using an ISR handler
-- A light sensor as part of a voltage divider via ADC0 or P3.4.
+- A light sensor as part of a voltage divider via `ADC0` or P3.4.
 - A three color LED via `PWM0`, `PWM1`, and `PWM2` (P0.4 to P0.6). This allows you to make smooth color transitions.
+- 3 relay inputs via GPIOs, e.g. P2.0, P2.1, and P2.5. P2.2 to P2.4 occupy the EEPROM connected via SPI.
 
 ![complicated device schematic (2)]({{ "/assets/images/zwave/zwave_schematic_zm5101_2.png" | relative_url }})
 
-Even after connecting all these components, we **still have 18 pins left**. In comparison, with the 3<sup>rd</sup> generation of Z-Wave chips and modules (ZM3202) we would not have been able to connect just the above components.
+Even after connecting all these components, we **still have 18 pins left**. In comparison, with the 3<sup>rd</sup> generation of Z-Wave chips and modules (ZM3202) we wouldn't even have been able to connect the above components.
 
 # Firmware
 Like other 8051 chips, Z-Wave chips organize their GPIO pins in 4&nbsp;ports. One SFR controls the direction (input/output), one the pull-up for GPIOs configured as inputs, and one is used for reading/writing the value.
 
 Timer, UART, SPI, and other functions are similar to other 8051 chips: TMOD/THx/TLx, UARTCON/UARTBUF/UARTSTAT, SPIxCON/SPIxDATA/SPISTAT, and so on.
 
-There are so many registers that in the 5<sup>th</sup> generation of chips one has to enter the `SFRPAGE` register to switch between SFR mapping pages and IRAM. The size of 128&nbsp;KB flash memory also required the use of memory banks, which significantly complicates the translated code, filling it with many transfers from bank to bank via COMMON BANK.
+There are so many registers that in the 5<sup>th</sup> generation of chips one has to enter the `SFRPAGE` register to switch between SFR mapping pages and IRAM. The size of 128&nbsp;KB flash memory also required the use of memory banks, which significantly complicates the translated code, filling it with many transfers from bank to bank via COMMON bank.
 
 In theory, any compiler, such as [SDCC](http://sdcc.sourceforge.net/) (GPL), can be used to compile code for the Z-Wave chips. However, there is no documentation on all these ports, registers, internal memory mapping and so on. Instead of making this information public, Sigma Designs chose to supply **pre-compiled libraries** that provide a convinient API to access the chip's hardware (wrappers for SFR access) and for accessing the Z-Wave network, i.e. sending commands to other nodes, managing the network, updating routes and more. Due to memory size constraints Sigma Designs provides libraries for different device classes, e.g. controllers, slaves, and gateways. These libraries are **built for a specific version of KEIL**.
 
@@ -180,7 +200,7 @@ The libraries implement the following lower levels of the Z-Wave protocol:
 
 **Sigma Designs ensures the compatibility** of all devices for these levels and is driving protocol development. The big advantage of this approach is that one cannot screw up these lower levels and has a simple high-level API to access the network. Furthermore, Sigma Designs takes care of fixing any defects that are discovered in these levels.
 
-In order to interact with the network, the developers rely on a simple API to communicate with other nodes. However, the specification also requires strict compatibility at the higher levels: session, presentation, and application. These levels are in the hands of the application developer.  
+In order to interact with the network, developers rely on a simple API to communicate with other nodes. However, the specification also requires strict compatibility at the higher levels: session, presentation, and application. Interactions at these levels are in the hands of application developers.  
 The library allows *node A* to send a command to *node B*. The command must adhere to a specific message format defined in the specification (see Command Class Specification, about 900&nbsp;pages). This will allow *node B* to properly decode the command and perform the corresponding action on the periphery.
 
 Z-Wave libraries make **heavy use of callbacks**. The main logic is in the library and control is only transferred to the user code at certain times:
@@ -193,7 +213,7 @@ Z-Wave libraries make **heavy use of callbacks**. The main logic is in the libra
 All time consuming and asynchronous functions can also be passed on to the callback. For example, when you call the packet sending function, you can specify the handler that will receive the sending status (delivered, not delivered, and the error code). In the same way, the timer subsystem is executed (besides the exact timers based on `TIMER` and `GPT`): it is possible to start up to 5 software timers that work with 10&nbsp;ms increments (`TIMER0` cannot be used since it is already used by the library, among other things to implement the software timers). All this makes it easier for the programmers of the final device manufacturer.
 
 Z-Wave libraries also come with a huge number of specification compliant data structures and constants predefined in the **header files** greatly simplifying development.  
-Sigma Designs also provides two dozen **examples of simple device applications**, such as a relay, binary sensor, or door lock, with the minimum functionality required to operate and qualify as Z-Wave Plus. Funnily enough, more than half of the Z-wave **devices in the field use these examples without a single modified line**, except for the `ManufacturerId`, `ProductId`, and `ProductTypeId`. These identifiers must be unique for each manufacturer and device and are therefore changed prior to device certification. If it were not for the certification, they would probably not be changed.
+Sigma Designs also provides two dozen **examples of simple device applications**, such as a relay, binary sensor, or door lock, with the minimum functionality required to operate and qualify as <abbr title="Stricter version of the Z-Wave (Classic) protocol. Improves interoperability of devices by adding context for the application level.">Z-Wave Plus</abbr>. Funnily enough, more than half of the Z-wave **devices in the field use these examples without a single modified line**, except for the `ManufacturerId`, `ProductId`, and `ProductTypeId`. These identifiers must be unique for each manufacturer and device and are therefore changed prior to device certification. If it were not for the certification, they would probably not be changed.
 
 All header files, libraries, and sample code is available as part of the **Z-Wave SDK** a.k.a. ZDK. The ZDK is distributed under the NDA. You usually have to sign the NDA once you purchase a DevKit.
 
@@ -316,7 +336,7 @@ Obviously, all devices must handle the commands in more or less the same way. Th
 # Certification
 After you have came up with the idea for the device, made a prototype, and wrote the firmware for it, you need to certify it. **Certification is required** by Sigma Designs to ensure your device's compliance with the Z-Wave specification. The certification process consists of two parts: **Technical Certification and Market Certification**. Market Certification verifies the end user documentation (using key Z-Wave terminology) as well as the presence and correct use of the Z-Wave classic respectively Z-Wave Plus logo.
 
-Z-Wave certification is carried out by one of three **test houses**: Pepper One in Germany, BuLogics in USA, or Sigma Designs in Denmark. Prior to certification, you need to perform all tests yourself---this is called **Self-Certification**. It allows you to detect and eliminate many errors ahead of the costly certification and increase your chances for passing. Sigma Designs provides a Certification Test Tool (CTT) to all full Z-wave Alliance members for this purpose. All development tools are also used by the test houses themselfes.  
+Z-Wave certification is carried out by one of three **test houses**: Pepper One in Germany, BuLogics in USA, or Sigma Designs in Denmark. Prior to certification, you need to perform all tests yourself---this is called **Self-Certification**. It allows you to detect and eliminate many errors ahead of the costly certification and increase your chances for passing. Sigma Designs provides a Compliance Test Tool (CTT) to all full Z-wave Alliance members for this purpose. All development tools are also used by the test houses themselfes.  
 It also exists a certification form that defines which exact tests have to be performed. Depending on your device's capabilities, it may range from **100 to 300 different tests**. Every test is accompanied by detailed test instructions.  
 **The entire process is very transparent**. It is clear in advance what and how your device will be tested---this is, if you read the available documentation ;)
 
@@ -412,7 +432,7 @@ In short, it is a small board based on the ZM5101. Almost all its pins are acces
 - CC: Command Class
 - CPU: Central Processing Unit
 - CS: Chip Select
-- CTT: Certification Test Tool
+- CTT: Compliance Test Tool
 - DUT: Device Under Test
 - EEPROM: Electrically Erasable Programmable Read Only Memory
 - FAE: Field Application Engineer
@@ -438,9 +458,11 @@ In short, it is a small board based on the ZM5101. Almost all its pins are acces
 - SFR: Special Function Register
 - SoC: System on a Chip
 - SPI: Serial Peripheral Interface
+- TRIAC: TRiode for Alternating Current"
 - TX: Transmit
 - UART: Universal Asynchronous Receiver/Transmitter
 - USB: Universal Serial Bus
 - WUT: Wake Up Timer
 - ZDK: Z-Wave SDK
+- ZEROX: Zero Cross
 
