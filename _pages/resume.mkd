@@ -104,6 +104,9 @@ sci-fi books, meditation, psychology, society
 **Software**  
 i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
 
+<!--**Meetups**  
+Chaotikum, Softwerkskammer Ruhr, ...-->
+
 <!--**Books**  
 - Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
 
