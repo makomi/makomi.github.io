@@ -13,7 +13,7 @@ Help create a sustainable future by delivering operational, maintainable, secure
 # <i class="fa fa-fw fa-user"></i> Career profile
 Embedded software engineer with three years of experience in programming C/C++ middleware and application level software for heating controllers and room thermostats using [atomthreads](https://atomthreads.com/) and [FreeRTOS](https://freertos.org/).
 
-Increased productivity by organizing <abbr title="A 'fortnight' is a unit of time equal to 14 days.">fortnightly</abbr> developer meetings that facilitate internal knowledge transfer and documenting relevant knowledge as well as answers to recurring questions.
+Increased developer productivity by organizing <abbr title="A 'fortnight' is a unit of time equal to 14 days.">fortnightly</abbr> developer meetings that facilitate internal knowledge transfer and documenting relevant knowledge as well as answers to recurring questions.
 
 Improved software quality by furthering the adoption of software development best practices and guiding the development of key features that help us deliver a working product.
 
