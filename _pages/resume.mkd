@@ -36,7 +36,7 @@ Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD.
 Working knowledge of Make and SCons.
 
 **Protocols**  
-Working knowledge of Z-Wave.
+Working knowledge of Z-Wave (500 Series, Controllers and End Devices).
 
 **PC OS**  
 Debian GNU/Linux (user/admin), Microsoft Windows
