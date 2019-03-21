@@ -103,3 +103,10 @@ sci-fi books, meditation, psychology, society
 
 **Software**  
 i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
+
+<!--**Books**  
+- Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
+
+<!--**People I follow**  
+[Drew DeVault](https://www.patreon.com/sircmpwn), [Travis Goodspeed](https://travisgoodspeed.blogspot.com/)-->
+
