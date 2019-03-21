@@ -6,11 +6,11 @@ categories: [Z-Wave, product development]
 tags: [habr, Geek Magazine, Geek Times, Z-Wave.me, introduction, Z-Wave 500 Series, IoT]
 toc: true
 toc_sticky: true
-last_modified_at: "2019-03-20"
+last_modified_at: "2019-03-22"
 ---
 
-**Description**  
-An overview of what it means to build a Z-Wave *slave device* based on the *500 Series* chips without a separate host MCU, i.e. writing code that runs directly *on the Z-Wave chip*.
+<!--**Description**  -->
+This text gives an overview of what it means to build a Z-Wave *slave* device based on the *500 Series* chips without a separate host MCU, i.e. writing code that runs *directly on the Z-Wave chip*.
 
 **Summary**  
 5<sup>th</sup> generation Z-Wave chips have a modified 8051 core and offer a good selection of peripherals. Currently, all chips are manufactured by Silicon Labs and are available in three variants to accomodate the RF regulations of different countries. Z-Wave products must only be built with official Z-Wave chips and must be certified by a test house prior to market launch.  
@@ -29,7 +29,7 @@ I decided to publish another English translation to improve the odds for all non
 **By the way:** Dec&nbsp;18, 2017, [Silicon Labs aquired Sigma Designs](https://www.electronicdesign.com/embedded-revolution/silicon-labs-acquired-sigma-designs-282-million-heres-why), *Electronic Design*.
 {: .notice--info}
 
-**Warning:** The Z-Wave specification, hardware, and processes changed quite a bit since the original post was written in January 2016. See the [Silicon Labs website](https://www.silabs.com/products/wireless/mesh-networking/z-wave) for the latest information, e.g. the [specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification) and [document search](https://www.silabs.com/support/resources.ct-manuals_user-guides.p-wireless_z-wave).
+**Warning:** The Z-Wave specification, hardware, and processes changed a bit since the original post was written in January 2016. See the [Silicon Labs website](https://www.silabs.com/products/wireless/mesh-networking/z-wave) for the latest information, e.g. the [specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification) and [document search](https://www.silabs.com/support/resources.ct-manuals_user-guides.p-wireless_z-wave). You might also be interested in the [catalog of certified Z-Wave products](https://products.z-wavealliance.org/).
 {: .notice--warning}
 
 **<center>— beginning of translation —</center>**
@@ -193,7 +193,7 @@ There are so many registers that in the 5<sup>th</sup> generation of chips one h
 In theory, any compiler, such as [SDCC](http://sdcc.sourceforge.net/) (GPL), can be used to compile code for the Z-Wave chips. However, there is no documentation on all these ports, registers, internal memory mapping and so on. Instead of making this information public, Sigma Designs chose to supply **pre-compiled libraries** that provide a convinient API to access the chip's hardware (wrappers for SFR access) and for accessing the Z-Wave network, i.e. sending commands to other nodes, managing the network, updating routes and more. Due to memory size constraints Sigma Designs provides libraries for different device classes, e.g. controllers, slaves, and gateways. These libraries are **built for a specific version of KEIL**.
 
 The libraries implement the following lower levels of the Z-Wave protocol:
-- **PHY**: Directly coding and decoding at the desired frequency, the choice of the transmission channel, <abbr title="listen before talk">LBT</abbr>
+- **PHY**: Directly coding and decoding at the desired frequency, choice of transmission channel, <abbr title="listen before talk">LBT</abbr>
 - **MAC**: Error control, addressing within the area of visibility
 - **Transport**: Confirmation, repetition
 - **Network**: Routing, retransmission, route updates, search for new routes, inclusion in the network, removal from the network
@@ -362,7 +362,7 @@ When creating complex devices that require many pins, it may be necessary to use
 ## Z-Wave Serial API
 ![Z-Wave USB sticks]({{ "/assets/images/zwave/zwave_usb_sticks.png" | relative_url }})
 
-A typical approach is to use a Z-Wave chip together with another MCU or CPU that is running an operating system, e.g. PC or Raspberry Pi. Sigma Designs provides its own protocol for exchanging information between the Z-Wave chip and the host MCU/ CPU so manufacturers don't have to invent their own. This protocol is called *Serial API* and uses the UART. By and large it provides the same API access as if the code were running directly on the Z-Wave chip.  
+There is an alternative to running the application directly on the Z-Wave chip: running it on another MCU a.k.a. *host MCU* and letting both chips communicate via UART or SPI using the so called *Serial API*, a Z-Wave specific protocol developed by Sigma Designs. This approach is usually followed for more complex devices that need a dedicated application processor as well as for multi purpose computers like the Raspberry Pi and of course desktop PCs. By and large the Serial API provides the same API access as if the code were running directly on the Z-Wave chip.  
 This separation allowed third parties to create a market for Z-Wave USB sticks that is separate from the market of software for them: many manufacturers offer interchangeable USB sticks, while software manufacturers create software that works with any of those USB sticks. An example of such a software is the PC Controller that is part of the ZDK.
 
 This approach makes it easier for manufacturers to lauch Z-Wave enabled products: a manufacturer of TV set-top boxes or routers can create a solution based on a third-party Z-Wave USB stick. Once the number of sales increase the manufacturer may decide to replace the Z-Wave USB stick with a Z-Wave module to reduce the costs (among other things). In these cases most choose the ZM5304.
