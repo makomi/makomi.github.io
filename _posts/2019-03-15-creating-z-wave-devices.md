@@ -1,7 +1,7 @@
 ---
 title: Creating Z-Wave devices
 permalink: /posts/creating-z-wave-devices
-excerpt: An overview of what it means to build a Z-Wave slave device based on the 500 Series chips without a separate host MCU.
+excerpt: An overview of what it means to build a Z-Wave slave device based on the 500&nbsp;Series chips without a separate host MCU.
 categories: [Z-Wave, product development]
 tags: [habr, Geek Magazine, Geek Times, Z-Wave.me, introduction, Z-Wave 500 Series, IoT]
 toc: true
@@ -10,7 +10,7 @@ last_modified_at: "2019-03-22"
 ---
 
 <!--**Description**  -->
-This text gives an overview of what it means to build a Z-Wave *slave* device based on the *500 Series* chips without a separate host MCU, i.e. writing code that runs *directly on the Z-Wave chip*.
+This text gives an overview of what it means to build a Z-Wave *slave* device based on the *500&nbsp;Series* chips without a separate host MCU, i.e. writing code that runs *directly on the Z-Wave chip*.
 
 **Summary**  
 5<sup>th</sup> generation Z-Wave chips have a modified 8051 core and offer a good selection of peripherals. Currently, all chips are manufactured by Silicon Labs and are available in three variants to accomodate the RF regulations of different countries. Z-Wave products must only be built with official Z-Wave chips and must be certified by a test house prior to market launch.  
