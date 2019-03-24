@@ -1,0 +1,23 @@
+---
+permalink: /sw-dev-priorities/
+title: " "
+#author_profile: false
+---
+
+<!--This might be obvious, but I am explaining it anyway.-->
+
+<!--Focusing on efficiency to the detriment of the other mentioned properties would not yield useful software.-->
+
+> Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---in that order.
+
+While all mentioned goals are worth achieving, **some are more important than others** because they contribute more to the software's overall and longterm value:
+- If it doesn't **work**, it doesn't generate value. (no product)
+- If it isn't **maintainable**, it cannot be changed/improved. (no future)
+- If it isn't **secure**, its operation is harmful. (at least bad press)
+- If it isn't **easy to use**, only few people will use it. (little adoption)
+- If it isn't **efficient**, the business is waisting money and opportunities. (<abbr title="Return of Investment">ROI</abbr>)
+
+**Efficiency**, for example, is nice, but as a goal it has to come last in this list. <!--First SW has to work (be operational), continue to work after changes were made (be maintainable), work without compromising customer's data (be secure), be usable by the customer (be easy to use), and at last work as fast as possible while requiring as few resources as possible (be efficient).  -->
+Of course, if software executes too slow, at some point the first mentioned objectives will not be met anymore. Some level of efficiency is required for all of them, but improving efficiency beyond that level, has to come last.
+
+[go back to the résumé]({{ "/resume/" | relative_url }})

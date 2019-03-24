@@ -7,7 +7,7 @@ toc_sticky: true
 ---
 
 # <i class="fa fa-fw fa-crosshairs"></i> Career objective
-Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---in that order.
+Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---[in that order]({{ "/sw-dev-priorities/" | relative_url }}).
 
 
 # <i class="fa fa-fw fa-user"></i> Career profile
