@@ -39,7 +39,7 @@ In this article we will explain how Z-Wave devices are created.
 The circuit engineering and programming of Z-Wave devices is quite similar to devices based on Arduino, AVR, or PIC. However, there are of course differences and this article will cover them.
 
 {% capture fig_img %}
-![Philio]({{ "/assets/images/zwave/philio.png" | relative_url }})
+![Philio]({{ site.url }}{{ site.baseurl }}/assets/images/zwave/philio.png)
 {% endcapture %}
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -130,7 +130,7 @@ Z-Wave chips use a **custom protocol for programming** and therefore require spe
 The DevKit consists of two parts: a generic one for all world regions and a regional one for your specific world region respectively allowed frequency range.
 
 {% capture fig_img %}
-![Z-Wave DevKit (generic)]({{ "/assets/images/zwave/zwave_devkit_generic.jpg" | relative_url }})
+![Z-Wave DevKit (generic)]({{ site.url }}{{ site.baseurl }}/assets/images/zwave/zwave_devkit_generic.jpg)
 {% endcapture %}
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -138,7 +138,7 @@ The DevKit consists of two parts: a generic one for all world regions and a regi
 </figure>
 
 {% capture fig_img %}
-![Z-Wave DevKit (specific)]({{ "/assets/images/zwave/zwave_devkit_specific.jpg" | relative_url }})
+![Z-Wave DevKit (specific)]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_devkit_specific.jpg)
 {% endcapture %}
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -154,12 +154,12 @@ In order to call your device Z-Wave compatible, you need to pass the **certifica
 
 According to the license agreement, each Z-Wave device has to have the Z-Wave **logo** somwhere on it---usually on the back. This promotes Z-Wave as a brand.
 
-![Z-Wave Plus logo example]({{ "/assets/images/zwave/zwave_plus_logo_example.jpg" | relative_url }})
+![Z-Wave Plus logo example]({{ site.url }}{{ site.baseurl }}/assets/images/zwave/zwave_plus_logo_example.jpg)
 
 ## Typical electrical setup
 Let's get back to the hardware. The following image showas a typical **ZM5101 connection diagram**:
 
-![complicated device schematic]({{ "/assets/images/zwave/zwave_schematic_zm5101.png" | relative_url }})
+![complicated device schematic]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_schematic_zm5101.png)
 
 The **NVM** is SPI EEPROM or flash memory of at least 16&nbsp;KB. It is necessary for storing data about network nodes, routes, and so on. It is possible to create devices without an external EEPROM by using a flash memory block and thereby reducing the available code space. External EEPROM memory takes up one of the SPIs and one additional GPIO pin for `CS`. SPI pins can easily be used as GPIO or to connect another SPI Slave while `CS` is raised to 3.3&nbsp;V. The same SPI is used to program the Z-Wave chip when `RESET` is pulled down. That's why we need a CS pull-up (ZM5101 becomes SPI Slave, and the second Slave is obviously not needed here).
 
@@ -179,7 +179,7 @@ All of this can be immediately connected to the Z-Wave chip:
 - A three color LED via `PWM0`, `PWM1`, and `PWM2` (P0.4 to P0.6). This allows you to make smooth color transitions.
 - 3 relay inputs via GPIOs, e.g. P2.0, P2.1, and P2.5. P2.2 to P2.4 occupy the EEPROM connected via SPI.
 
-![complicated device schematic (2)]({{ "/assets/images/zwave/zwave_schematic_zm5101_2.png" | relative_url }})
+![complicated device schematic (2)]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_schematic_zm5101_2.png)
 
 Even after connecting all these components, we **still have 18 pins left**. In comparison, with the 3<sup>rd</sup> generation of Z-Wave chips and modules (ZM3202) we wouldn't even have been able to connect the above components.
 
@@ -360,7 +360,7 @@ Another challenge is the **creation of battery devices**. In order to reduce pow
 When creating complex devices that require many pins, it may be necessary to use multiple chips that communicate with each other using UART, SPI, or I2C. In such cases, part or all of the communication with external components is done by a second more advanced chip a.k.a. the host <abbr title="Microcontroller Unit">MCU</abbr> which uses the Z-Wave chip as a "modem" to access the Z-Wave network. It is very convenient to use more advanced Atmel or ARM Cortex-M chips since they have better peripherals and consume less power (nA instead of μA).
 
 ## Z-Wave Serial API
-![Z-Wave USB sticks]({{ "/assets/images/zwave/zwave_usb_sticks.png" | relative_url }})
+![Z-Wave USB sticks]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_usb_sticks.png)
 
 There is an alternative to running the application directly on the Z-Wave chip: running it on another MCU a.k.a. *host MCU* and letting both chips communicate via UART or SPI using the so called *Serial API*, a Z-Wave specific protocol developed by Sigma Designs. This approach is usually followed for more complex devices that need a dedicated application processor as well as for multi purpose computers like the Raspberry Pi and of course desktop PCs. By and large the Serial API provides the same API access as if the code were running directly on the Z-Wave chip.  
 This separation allowed third parties to create a market for Z-Wave USB sticks that is separate from the market of software for them: many manufacturers offer interchangeable USB sticks, while software manufacturers create software that works with any of those USB sticks. An example of such a software is the PC Controller that is part of the ZDK.
@@ -381,7 +381,7 @@ In addition to the above, the Z-Wave Alliance has working groups that work on th
 For more information, visit the [Z-Wave Alliance](http://z-wavealliance.org/) website.
 
 # A little more on money
-![Z-Wave.Me simple devices]({{ "/assets/images/zwave/zwave_zwaveme_simple_devices.jpg" | relative_url }})
+![Z-Wave.Me simple devices]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_zwaveme_simple_devices.jpg)
 
 Let's do a rough estimation of how much it will cost us to build a simple keychain device. The device on the left uses a 5<sup>th</sup> generation module and the one on the right a 3<sup>rd</sup> generation module.
 
@@ -418,7 +418,7 @@ If you only want to create a remotely controlled light bulb, a motion sensor or 
 # Somehow difficult for the simple geek (advertisement)
 As a developer, do you dislike the idea of having to pay a lot of money and having to understand the Z-Wave protocol but you are also not satisfied with available devices? Then you might be interested in one of our new devices called [Z-Uno](http://geektimes.ru/post/268980/).
 
-![Z-Wave.Me Z-Uno]({{ "/assets/images/zwave/zwave_zwaveme_z-uno.png" | relative_url }})
+![Z-Wave.Me Z-Uno]({{ site.url }}{{ site.baseurl }}//assets/images/zwave/zwave_zwaveme_z-uno.png)
 
 In short, it is a small board based on the ZM5101. Almost all its pins are accessible to you. You can use the Arduino IDE to write code and load it into the Z-Uno. We wrote our own Arduino library allowing you to describe your device's Z-Wave functionality (up to 10 functions) and define all required callbacks. This makes Z-Uno an Arduino clone with a 8051 at its core and built-in support for Z-Wave. See the [Z-Uno product page](http://z-uno.z-wave.me/) for more information.
 
