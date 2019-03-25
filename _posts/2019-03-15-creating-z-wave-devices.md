@@ -9,7 +9,6 @@ toc_sticky: true
 last_modified_at: "2019-03-22"
 ---
 
-<!--**Description**  -->
 This text gives an overview of what it means to build a Z-Wave *slave* device based on the *500&nbsp;Series* chips without a separate host MCU, i.e. writing code that runs *directly on the Z-Wave chip*.
 
 **Summary**  
