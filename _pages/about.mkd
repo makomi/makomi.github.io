@@ -4,7 +4,7 @@ permalink: /
 
 As an embedded software engineer with a background in electrical engineering I enjoy electronics and embedded C/C++ programming. I also spend time thinking about psychology, society, and how all of the above interacts.
 
-What motivates me is my desire for understanding how systems function, for writing working, well structured, readable software, and for removing inefficiencies as well as causes of error from the processes I am part of.
+My strongest motivation is my desire for understanding how systems function and creating working, maintainable software. I am continuously driven to remove inefficiencies as well as causes of error from the processes I am part of.
 
 I currently work as a C/C++ embedded software engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for heating controllers as well as room thermostats.
 My tasks range from building middleware to implementing application level feature requests.  
