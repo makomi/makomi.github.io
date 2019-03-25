@@ -1,0 +1,63 @@
+---
+permalink: /posts/vilisto-thermostat-concept
+title: "Vilisto's thermostat concept"
+excerpt: "This is a short introduction to the Hamburg startup *Vilisto* and some technical details about its current product."
+categories: [Vilisto, ZigBee, concepts]
+tags: [TRV, predictive heating]
+toc: true
+toc_sticky: true
+#last_modified_at: "YYYY-MM-DD"
+---
+
+This is a short introduction to the Hamburg startup *Vilisto* and some technical details about its current product.
+
+# My motivation for writing this text
+I think their idea to reduce energy use via a self-learning system that requires no user input is great. It makes temperature regulation one thing less to think about as an end user and one thing less to misconfigure. While some companies apparently try to maximize the amount of time and attention end users spend on their devices, Vilisto takes the opposite approach and focuses on what matters from the customer's point of view.
+
+I wrote down what I currently know about their concept, because I find it interesting to get an idea of the kind of system they are building on a technical level.
+
+# The company
+[Vilisto](https://www.vilisto.de/) was founded in 2014 and consists of [Christoph&nbsp;Berger](https://www.xing.com/profile/Christoph_Berger59/) (CEO), [Lasse&nbsp;Stehnken](https://www.xing.com/profile/Lasse_Stehnken/) (CTO), as well as [Christian&nbsp;Brase](https://www.xing.com/profile/Christian_Brase4/) (CSO).
+
+The company's goal is to help their (primarily business) customers save energy by offering a thermostat solution that detects relevant changes in its surrounding, learns each room's thermal properties, learns to predict people's routines, and uses that information to minimize the required energy to achieve the desired room temperature whenever someone is present---all by itself.
+
+# The product
+Their solution consists of two types of devices: A <abbr title="Thermostatic Radiator Valve">TRV</abbr> called *ovis* and a central internet connected unit called *shepard*. The thermostats collect data about each room as well as people's presence and the central unit aggregates that data, processes it, and controls the thermostats on a room-by-room basis.
+
+# Technical details
+**Goal**: Learning each room's thermal parameters, predicting disturbance variables, and controlling a room's temperature by setting the valves positions for each room individually while taking the desired room temperature into account.
+
+**Setup**: TRVs are transmitting all collected data to an internet connected base station that uses this information to feed the mathematical prediction models and control the valves' positions. It also fetches current weather and weather predictions to feed the models.
+
+**Technology** used by Vilisto
+- ZigBee (802.15.4)
+- C/C++
+- MATLAB/Simulink with code generation
+
+**Sensors** in the TRVs
+- Temperature
+- Humidity
+- Sound
+- Motion
+
+**Other inputs** provided by the central unit (via meteorological services)
+- Current outside temperature
+- Current intensity with which the sun's heat hits the area the room is located in
+- Predictions of above parameters
+
+Vilisto uses **mathematical models** for
+- Detecting presence (sound, motion)
+- Detecting open windows (temperature, humidity, sound?)
+- Learning room parameters, e.g. room size (air volume), thermal insulation (speed with which the room heats up when it is sunny and cools down once the sun does not shine and/or the outside temperature drops, e.g. during the night)
+
+... and uses above data as inputs for the mathematical prediction models:
+- Predicting presence, i.e. the need meet the desired room temperature.
+- Predicting behavior, e.g. open windows
+
+These predictions are used to control the valves' positions for each room individually while taking the desired room temperature into account.
+
+# Sources
+- [Smarter Einheizer: Ein Start-up aus Hamburg will mit intelligenten Thermostaten die Heizung automatisieren.](https://www.brandeins.de/magazine/brand-eins-wirtschaftsmagazin/2019/marketing/smarter-einheizer), brand eins, 2019, accessed: 2019-03-23
+- [TUHH Spektrum November 2016](https://tore.tuhh.de/handle/11420/1336), TUHH, Nov. 2016, accessed: 2019-03-23
+- [Vilisto: Funktionsweise](https://www.vilisto.de/funktionsweise/), accessed: 2019-03-23
+- [Vilisto: Jobs](https://www.vilisto.de/jobs/), accessed: 2019-03-23
