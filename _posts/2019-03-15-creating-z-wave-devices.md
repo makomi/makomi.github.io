@@ -2,8 +2,8 @@
 title: Creating Z-Wave devices
 permalink: /posts/creating-z-wave-devices
 excerpt: An overview of what it means to build a Z-Wave slave device based on the 500&nbsp;Series chips without a separate host MCU.
-categories: [Z-Wave, product development]
-tags: [habr, Geek Magazine, Geek Times, Z-Wave.me, introduction, Z-Wave 500 Series, IoT]
+categories: [getting started, product development, Z-Wave]
+tags: [habr, Geek Magazine, Geek Times, Z-Wave.me, Z-Wave 500 Series, IoT]
 toc: true
 toc_sticky: true
 last_modified_at: "2019-03-22"
