@@ -20,7 +20,7 @@ Have a look at the [glossary](#glossary) at the end of this blog post, in case y
 
 All images are provided by courtesy of Sigma Designs and Z-Wave.me.
 
-**Please note:** This is a translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)". The original article was published via *habr* by <abbr title="Serguei Poltorak a.k.a. PoltoS">[Сергей Полторак](https://www.facebook.com/serguei.poltorak)</abbr> on *January&nbsp;8, 2016*. Сергей founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009.  
+**Please note:** This is an authorized translation of a Russian article titled "[Как делаются Z-Wave устройства](https://habr.com/en/company/zwave/blog/367509/)". The original article was published via *habr* by <abbr title="Serguei Poltorak a.k.a. PoltoS">[Сергей Полторак](https://www.facebook.com/serguei.poltorak)</abbr> on *January&nbsp;8, 2016*. Сергей founded the [Russian division](http://rus.z-wave.me/) of [Z-Wave.me](http://z-wave.me/) in 2009.  
 I originally read its English translation "[As device Z-Wave become](http://geek-mag.com/posts/268602/)" published via *Geek Magazine*. However, at the beginning of 2019, *Geek Magazine's* domain went offline, leaving only the [Wayback Machine](https://web.archive.org/web/20170919095954/http://geek-mag.com/posts/268602/) to still read and discover the translation.  
 I decided to publish another English translation to improve the odds for all non-Russian readers to benefit from the article's breadth and unique focus on practical knowledge. Since I don't speak Russian, I am using the original English translation and [DeepL Translate](https://deepl.com/translate/) to write this text.
 {: .notice--info}
