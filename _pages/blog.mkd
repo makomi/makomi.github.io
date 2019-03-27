@@ -3,7 +3,9 @@ title: "Blog"
 permalink: /blog/
 ---
 
-[Categories and tags]({{ "/topics/" | relative_url }})
+<!--[Categories and tags]({{ "/topics/" | relative_url }})-->
+
+Send me an email or [open a GitHub issue](https://github.com/makomi/makomi.github.io/issues) to point out a mistake. Pull requests are welcome.
 
 {% for post in site.posts %}
   {% include archive-single.html %}
