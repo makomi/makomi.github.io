@@ -6,7 +6,7 @@ categories: [concepts]
 tags: [Vilisto, TRV, ZigBee, predictive heating]
 toc: true
 toc_sticky: true
-last_modified_at: "2019-03-26"
+last_modified_at: "2019-03-28"
 ---
 
 This is a short introduction to the Hamburg startup [*Vilisto*](https://www.vilisto.de/) and some technical details about its current product.
@@ -19,12 +19,12 @@ I wrote down what I currently know about their concept, because I find it intere
 # The company
 Vilisto was founded in 2014 and consists of [Christoph&nbsp;Berger](https://www.xing.com/profile/Christoph_Berger59/) (CEO), [Lasse&nbsp;Stehnken](https://www.xing.com/profile/Lasse_Stehnken/) (CTO), as well as [Christian&nbsp;Brase](https://www.xing.com/profile/Christian_Brase4/) (CSO).
 
-The company's goal is to help their (primarily business) customers save energy by offering a thermostat solution that detects relevant changes in its surroundings, learns each room's thermal properties, learns to predict people's routines, and uses that information to minimize the required energy to achieve the desired room temperature whenever someone is present---all by itself.
+The company's goal is to help their (primarily business) customers save energy by only reaching the desired room temperature whenever someone is present. For this their thermostat solution detects relevant changes in its surroundings, learns each room's thermal properties, and trys to predict people's routines.
 
 See these news articles for the typical marketing pitch: [TUHH](https://tore.tuhh.de/handle/11420/1336), [brand eins](https://www.brandeins.de/magazine/brand-eins-wirtschaftsmagazin/2019/marketing/smarter-einheizer).
 
 # The product
-[Their solution](https://www.vilisto.de/funktionsweise/) consists of two types of devices: A <abbr title="Thermostatic Radiator Valve">TRV</abbr> called *ovis* and a central internet connected unit called *shepard*. The thermostats collect data about each room, people’s presence as well as when windows are opened. The central unit aggregates this data, processes it, and controls the thermostats on a room-by-room basis.
+[Their solution](https://www.vilisto.de/funktionsweise/) consists of two types of devices: A <abbr title="Thermostatic Radiator Valve">TRV</abbr> called *ovis* and a central internet connected unit called *shepard*. The thermostats collect data about each room, people’s presence as well as when windows are opened. The central unit aggregates this data, processes it, and controls the thermostats on a per room basis.
 
 # Technical details
 **Goal**: Learning each room's thermal parameters, predicting disturbance variables (like open windows), and controlling a room's temperature by setting the valves positions for each room individually while taking the desired room temperature into account as well as the predicted times of presence.
