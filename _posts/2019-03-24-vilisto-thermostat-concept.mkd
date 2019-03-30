@@ -1,15 +1,15 @@
 ---
 permalink: /posts/vilisto-thermostat-concept
 title: "Vilisto's thermostat concept"
-excerpt: "This is a short introduction to the Hamburg startup *Vilisto* and some technical details about its current product."
+excerpt: "This is a short introduction to the Hamburg startup *Vilisto* and some technical details about their current product."
 categories: [concepts]
 tags: [Vilisto, TRV, ZigBee, predictive heating]
 toc: true
 toc_sticky: true
-last_modified_at: "2019-03-28"
+last_modified_at: "2019-03-29"
 ---
 
-This is a short introduction to the Hamburg startup [*Vilisto*](https://www.vilisto.de/) and some technical details about its current product.
+This is a short introduction to the Hamburg startup [*Vilisto*](https://www.vilisto.de/) and some technical details about their current product.
 
 # My motivation for writing this text
 I think their idea to reduce energy use via a self-learning system that requires no user input is great. It makes temperature regulation one thing less to think about as an end user and one thing less to misconfigure. While some companies apparently try to maximize the amount of time and attention end users spend on their devices, Vilisto takes the opposite approach and focuses on what matters from the customer's point of view.
@@ -19,7 +19,7 @@ I wrote down what I currently know about their concept, because I find it intere
 # The company
 Vilisto was founded in 2014 and consists of [Christoph&nbsp;Berger](https://www.xing.com/profile/Christoph_Berger59/) (CEO), [Lasse&nbsp;Stehnken](https://www.xing.com/profile/Lasse_Stehnken/) (CTO), as well as [Christian&nbsp;Brase](https://www.xing.com/profile/Christian_Brase4/) (CSO).
 
-The company's goal is to help their (primarily business) customers save energy by only reaching the desired room temperature whenever someone is present. For this their thermostat solution detects relevant changes in its surroundings, learns each room's thermal properties, and trys to predict people's routines.
+The company's thermostat solution aims to save energy by only reaching the desired room temperature when someone is present. This is done by detecting relevant changes in the thermostat's surroundings, learning each room's thermal properties, and trying to predict people's routines.
 
 See these news articles for the typical marketing pitch: [TUHH](https://tore.tuhh.de/handle/11420/1336), [brand eins](https://www.brandeins.de/magazine/brand-eins-wirtschaftsmagazin/2019/marketing/smarter-einheizer).
 
@@ -56,7 +56,7 @@ Vilisto uses **mathematical models** for
 - Predicting presence, i.e. the need meet the desired room temperature at a certain time in the future.
 - Predicting disturbances, e.g. open windows
 
-These learned external room factors, detected changes, predicted presences and disturbances are used to calculate the optimal valves' positions individually for each room while taking the respective desired room temperature into account.
+These learned external room factors, detected changes as well as predicted presences and disturbances are used to calculate the optimal valves' positions individually for each room while taking the respective desired room temperature into account.
 
 # Sources
 - [TUHH Spektrum November 2016](https://tore.tuhh.de/handle/11420/1336), TUHH, Nov. 2016, accessed: 2019-03-23
