@@ -12,7 +12,7 @@ toc_sticky: true
 List of resources that will give you a good understanding of how to use Git.
 
 
-# Fundamentals
+## Fundamentals
 Everything you need to get started.
 * [learngitbranching.js.org](https://learngitbranching.js.org/): Interactive Git lesson teaching you the basics.
 * [Visualizing Git Concepts](https://onlywei.github.io/explain-git-with-d3) resp. [visualizing Git commands](https://git-school.github.io/visualizing-git/).
@@ -22,15 +22,15 @@ Everything you need to get started.
   * Chapter 3: [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
 
-# Official documentation
+## Official documentation
 * [Git SCM Docs](https://git-scm.com/doc/): Command reference manual, cheat sheets, "Pro Git book", videos.
 * [Git SCM external links](https://git-scm.com/documentation/external-links): Curated, ever-evolving collection of tutorials, books, videos, and other Git resources.
 * [Git SCM Wiki](https://git.wiki.kernel.org/)
 
 
-# Good community resources
+## Good community resources
 
-## Explanations
+### Explanations
 * [The simple guide](https://rogerdudler.github.io/git-guide/)
 * [The Git parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html): Mental creation of a Git-like system from the ground up. Explains the function of each part and how they complement each other.
 * [Git pretty](http://justinhileman.info/article/git-pretty/): Workflow chart
@@ -41,22 +41,22 @@ Everything you need to get started.
 * [Think Like (a) Git](http://think-like-a-git.net/): A guide for the perplexed.
 * [Practical Git introduction](http://marc.helbling.fr/2014/09/practical-git-introduction)
 
-## Tips and FAQ
+### Tips and FAQ
 * [Git tips](https://github.com/git-tips/tips): Common questions and their solutions
 * [GitHub Cheat Sheet](https://github.com/tiimgreen/github-cheat-sheet): Tips for working with GitHub
 * [Oh, shit, git!](http://ohshitgit.com/): How to get out of difficult situations
 * [Git Flight Rules](https://github.com/k88hudson/git-flight-rules) Detailed "if x then y"
 
-## Teaching Git
+### Teaching Git
 * [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 
 
-# Git internals
+## Git internals
 * [A Hacker's Guide to Git](https://wildlyinaccurate.com/a-hackers-guide-to-git/)
 * [Git for computer scientists](http://eagain.net/articles/git-for-computer-scientists/)
 
 
-# Misc
+## Misc
 * [try.github.io](http://try.github.io/)
 * [Git Exercise](https://gitexercises.fracz.com/) Learn and practice ([source](https://news.ycombinator.com/item?id=16107981))
 * [Learn Git Branching](https://learngitbranching.js.org/) ([source](https://news.ycombinator.com/item?id=18504948))
