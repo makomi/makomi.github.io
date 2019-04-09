@@ -14,7 +14,7 @@ List of resources that will give you a good understanding of how to use Git.
 
 ## Fundamentals
 Everything you need to get started.
-* [learngitbranching.js.org](https://learngitbranching.js.org/): Interactive Git lesson teaching you the basics.
+* [learngitbranching.js.org](https://learngitbranching.js.org/): Interactive Git lessons teaching you the basics.
 * [Visualizing Git Concepts](https://onlywei.github.io/explain-git-with-d3) resp. [visualizing Git commands](https://git-school.github.io/visualizing-git/).  
   Have a look at the [example visualizations](#example-visualizations) and try them out yourself---it's fun.
 * The [Pro Git Book](https://git-scm.com/book/en/v2)'s first three chapters. The remaining chapters go beyond the absolute basics and will be useful later on.
@@ -59,6 +59,7 @@ Everything you need to get started.
 
 ## Misc
 * [try.github.io](http://try.github.io/)
+* [GitHub's Git Handbook](https://guides.github.com/introduction/git-handbook/)
 * [Git Exercise](https://gitexercises.fracz.com/) Learn and practice ([source](https://news.ycombinator.com/item?id=16107981))
 * [Learn Git Branching](https://learngitbranching.js.org/) ([source](https://news.ycombinator.com/item?id=18504948))
 * [gittutorial.txt](https://github.com/git/git/blob/master/Documentation/gittutorial.txt)
