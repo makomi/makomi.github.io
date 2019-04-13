@@ -1,0 +1,149 @@
+---
+permalink: /posts/basic-git-setup
+title: "Basic Git setup"
+excerpt: "A minimalistic introduction to Git targeted at tech-savvy people looking for a safe way to backup important files for e.g. their bachelor thesis."
+categories: [Git, getting started]
+tags: [GitHub]
+toc: true
+toc_sticky: true
+#last_modified_at: "2019-04-13"
+---
+
+A minimalistic introduction to [Git](https://git-scm.org/) targeted at tech-savvy people looking for a safe way to backup important files for e.g. their bachelor thesis.
+
+This introduction covers the **simplest possible way to use Git**. If your primary goal is not to backup files but to learn Git, have a look at [getting more out of Git](#getting-more-out-of-git).
+
+**Warning:** Some new users tend to run into dead ends or shred their repo. Yet, as long as you regularly commit your changes and push them to GitHub, you can always just [clone your repo](#trouble-shooting) from GitHub and everything should be fine. **Proceed at your own risk.**
+{: .notice--warning}
+
+
+## Why Git and GitHub?
+I recommend using Git and [GitHub](https://github.com/) instead of a backup drive.
+* GitHub is more reliable than the drive on your desk (think flood/fire).
+* Learning how to properly version text and small binary files with Git will make you more efficient, if you modify and manage such files on a regular basis. This is especially true, if you are working on the same set of files with multiple people.
+
+**Note:** On January&nbsp;7, 2019, [GitHub announced](https://blog.github.com/2019-01-07-new-year-new-github/) that "GitHub Free now includes unlimited private repositories. For the first time, developers can use GitHub for their private projects with up to three collaborators per repository for free."
+{: .notice--info}
+
+
+## Step #1: Installation
+* Linux:
+  ```
+  $ sudo apt-get install git
+  ```
+* Windows: [gitforwindows.org](https://gitforwindows.org/)
+
+
+## Step #2: Basic configuration
+The following will be stored in the global Git configurgation file `~/.gitconfig`, i.e. be effective for all Git repos on the computer. Remove the `--global` parameter to apply them only to the repo you are currently in, in which case they will be stored as part of the repo.
+
+### Required
+Provide Git with your name and email address. This information will be added as meta data to all commits that you create, allowing others to attribute individual commits to you. This is irrelevant if you are the sole contributor to the repo. If your commits will be public, this information will be public as well.
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email "code@johndoe.name"
+```
+
+### Recommended
+The following settings define Git's behavior on the command line:
+* Get more detailed conflict resolution markups:
+  ```
+  $ git config --global merge.conflictstyle diff3
+  ```
+* Activate the warning for trailing spaces and deactivate it for <abbr title="Carriage Return">CR</abbr> at <abbr title="End of Line">EOL</abbr>:
+  ```
+  $ git config --global core.whitespace trailing-space,cr-at-eol
+  ```
+* Never convert [line-endings](https://en.wikipedia.org/wiki/Newline):
+  ```
+  $ git config --global core.autocrlf false
+  ```
+* Warn the user if Git attempts to change the newline representation:
+  ```
+  $ git config --global core.safecrlf true
+  ```
+See also: [What's the best CRLF handling strategy with Git?](https://stackoverflow.com/a/10855862).
+
+
+## Step #3: Creating the repo
+Sign up for [GitHub](https://github.com/) and create a new private repository via the web interface.
+
+Once you are done, create a new repository on your computer while replacing `USER` and `REPO` with your choices from above and push it to GitHub:
+```
+$ mkdir REPO && cd REPO
+$ echo "# test" >> README.mkd
+$ git init
+$ git add README.mkd
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/USER/REPO.git
+$ git push -u origin master
+```
+
+
+## Step #4: Making a change
+Make a small change, commit it, and push it to the remote repo `origin/master`:
+```
+$ echo "# Bachelor Thesis" >> README.mkd
+$ git add --all . && git commit -m "readme: Set the title"
+$ git push
+```
+
+
+## Step #5: Typing less
+Let's define the alias `aacm` so you have to type less:
+```
+$ git config --global alias.aacm "!git add --all . && git commit -m"
+```
+
+Now, you merely have to type the following to add all new files and changes inside your working directory to a commit as well as push it to GitHub:
+```
+$ git aacm "readme: Set the title"
+$ git push
+```
+
+Take a look at your global config file:
+```
+$ cat ~/.gitconfig
+```
+
+
+## Restoring an old version
+The easiest way to temporarily let your working directory reflect the state it had at a specific commit, is to use `gitk` and `git checkout`. Make sure you have saved all files and committed any changes before jumping back to an earlier state of your working directory.
+
+Start by viewing all commits that you created by typing
+```
+$ gitk&
+```
+Select the one that represents the point to which you would like to go back to. Copy the `SHA1 ID`, e.g. `52209...b1a32` to your clipboard and use it as in the following example:
+```
+$ git checkout 522095d20f4de88b2d0f2f5a42cb8c45b4cb1a32
+```
+
+**Do not make any changes** to any content of the working directory at this point as this would potentially leave you stranded and unable to resume work with your repo---at least until you know a bit more about Git.
+{: .notice--warning}
+
+Once you retrieved everything you need, jump back to your latest version:
+```
+$ git checkout master
+```
+
+Ideally, you won't have to checkout an old version and looking at your changes with `gitk` will be enough.
+
+
+## Trouble shooting
+Make sure to regularly commit your latest changes and push them to GitHub so you can restore them in case your computer dies or you shredded your repo:
+```
+$ git clone https://github.com/USER/REPO.git
+```
+
+For everything else, have a look at [Oh, shit, git!](http://ohshitgit.com/).
+
+
+## Getting more out of Git
+Once you are ready to unlock more of Git's utility, I recommend to read [GitHub's Git Handbook](https://guides.github.com/introduction/git-handbook/) and play with the [visualization of Git commands](https://onlywei.github.io/explain-git-with-d3). You might also find my collection of [Git learning resources]({{ "/posts/git-learning-resources" | relative_url }}) useful.
+
+As a next step, I encourage you to only create commits that contain a single logical step/change, e.g. fixing a typo, rewriting a paragraph, or adding an image file. This will allow you to exclusively manipulate, e.g. `revert`, this single commit and therefore undo this specific change while keeping everything else as it is. A tool that helps a lot in this regard is `git gui`:
+```
+$ git gui&
+```
+
