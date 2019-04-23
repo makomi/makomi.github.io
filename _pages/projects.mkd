@@ -3,21 +3,21 @@ permalink: /projects/
 title: Projects
 ---
 
-[email-signature-generator](https://github.com/makomi/email-signature-generator)  
+<big>[**email-signature-generator**](https://github.com/makomi/email-signature-generator)</big>  
 Python script for generating email signatures from a single (HTML) template for all employees at once
 
-[embedded_cicd](https://github.com/makomi/embedded_cicd) (WIP)  
+<big>[**embedded_cicd**](https://github.com/makomi/embedded_cicd)</big> (WIP)  
 Framework for building an individual CI/CD pipeline geared towards embedded systems
 
-[uart2csv](https://github.com/makomi/uart2csv)  
+<big>[**uart2csv**](https://github.com/makomi/uart2csv)</big>  
 Python script for reading a line via UART and appending it to a CSV file along with a timestamp
 
-[tdd_templates](https://github.com/makomi/tdd_templates)  
+<big>[**tdd_templates**](https://github.com/makomi/tdd_templates)</big>  
 Ready-to-use TDD templates for Code Katas/ Coding Dojos
 
-[timer_template](https://github.com/makomi/timer_template)  
+<big>[**timer_template**](https://github.com/makomi/timer_template)</big>  
 Python script for generating an analogue clock timer template
 
-[Freifunk_git-add-keys](https://github.com/makomi/Freifunk_git-add-keys)  
+<big>[**Freifunk_git-add-keys**](https://github.com/makomi/Freifunk_git-add-keys)</big>  
 BASH script for bulk adding fastd-keys to a Freifunk community's Git repo
 
