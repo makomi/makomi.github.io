@@ -1,7 +1,7 @@
 ---
 title: " "
 permalink: /resume/
-#excerpt: "Résumé"
+excerpt: "Résumé of Matthias Miehl (embedded software engineer)."
 toc: true
 toc_sticky: true
 ---

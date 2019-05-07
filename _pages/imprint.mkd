@@ -1,6 +1,7 @@
 ---
 permalink: /imprint/
 title: "Impressum"
+excerpt: "Imprint for the personal website of Matthias Miehl."
 ---
 
 *[German law demands this]*

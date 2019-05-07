@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 permalink: /blog/
+excerpt: "Blog of Matthias Miehl (embedded software engineer)."
 ---
 
 <!--[Categories and tags]({{ "/topics/" | relative_url }})-->

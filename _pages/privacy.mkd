@@ -1,6 +1,7 @@
 ---
 permalink: /privacy/
 title: "Datenschutzerklärung"
+excerpt: "Privacy policy for the personal website of Matthias Miehl."
 toc: true
 toc_sticky: true
 ---

@@ -1,6 +1,7 @@
 ---
 permalink: /projects/
 title: Projects
+excerpt: "List of projects by Matthias Miehl."
 ---
 
 <big>[**email-signature-generator**](https://github.com/makomi/email-signature-generator)</big>  
