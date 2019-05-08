@@ -1,7 +1,7 @@
 ---
 permalink: /sw-dev-priorities/
 title: "Software development priorities"
-excerpt: "A thought on priorities when developing software."
+excerpt: "My priorities when developing software."
 #author_profile: false
 ---
 
