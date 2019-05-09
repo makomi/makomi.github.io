@@ -25,7 +25,7 @@ I originally read its English translation "[As device Z-Wave become](http://geek
 I decided to publish another English translation to improve the odds for all non-Russian readers to benefit from the article's breadth and unique focus on practical knowledge. Since I don't speak Russian, I am using the original English translation and [DeepL Translate](https://deepl.com/translate/) to write this text.
 {: .notice--info}
 
-**By the way:** Dec&nbsp;18, 2017, [Silicon Labs aquired Sigma Designs](https://www.electronicdesign.com/embedded-revolution/silicon-labs-acquired-sigma-designs-282-million-heres-why), *Electronic Design*.
+**By the way:** On Dec&nbsp;18, 2017, [Sigma Designs was acquired by Silicon Labs](https://www.electronicdesign.com/embedded-revolution/silicon-labs-acquired-sigma-designs-282-million-heres-why).
 {: .notice--info}
 
 **Warning:** The Z-Wave specification, hardware, and processes changed a bit since the original post was written in January 2016. See the [Silicon Labs website](https://www.silabs.com/products/wireless/mesh-networking/z-wave) for the latest information, e.g. the [specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification) and [document search](https://www.silabs.com/support/resources.ct-manuals_user-guides.p-wireless_z-wave). You might also be interested in the [catalog of certified Z-Wave products](https://products.z-wavealliance.org/).
