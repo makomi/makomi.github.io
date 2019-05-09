@@ -1,5 +1,6 @@
 ---
 permalink: /
+excerpt: "Personal website of Matthias Miehl. Projects, blog, résumé."
 ---
 
 As an embedded software engineer with a background in electrical engineering I enjoy electronics and embedded C/C++ programming. I also spend time thinking about psychology, society, and how all of the above interacts.
