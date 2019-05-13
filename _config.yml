@@ -101,7 +101,7 @@ author:
   links:
     - label: "say-hi@makomi.net"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:say-hi@makomi.net?subject= Hey there!"
+      url: "mailto:say-hi@makomi.net?subject=Hey there!"
     - label: "GPG key"
       icon: "fas fa-fw fa-key"
       # url: "https://link-to-gpg-key"
