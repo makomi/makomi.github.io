@@ -4,6 +4,8 @@ title: Projects
 excerpt: "List of projects by Matthias Miehl."
 ---
 
+I like writing [Free Software](https://www.gnu.org/philosophy/free-sw.en.html).
+
 <big>[**email-signature-generator**](https://github.com/makomi/email-signature-generator)</big>  
 Python script for generating email signatures from a single (HTML) template for all employees at once
 
