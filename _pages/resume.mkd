@@ -111,6 +111,6 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 - Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
 
 **People I follow**  
-[EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ), [Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w)<!--,
+[Embedded Artistry](https://embeddedartistry.com), [Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), [EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ)<!--,
 [Drew DeVault](https://www.patreon.com/sircmpwn), [Travis Goodspeed](https://travisgoodspeed.blogspot.com/)-->
 
