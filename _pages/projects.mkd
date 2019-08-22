@@ -6,6 +6,9 @@ excerpt: "List of projects by Matthias Miehl."
 
 I like writing [Free Software](https://www.gnu.org/philosophy/free-sw.en.html).
 
+<big>[**Embedded Systems Software Quality**](https://t.me/embedded_sw_quality)</big>  
+A Telegram channel where I share relevant articles, news, and insights regarding all aspects of software quality with a focus on embedded systems.
+
 <big>[**email-signature-generator**](https://github.com/makomi/email-signature-generator)</big>  
 Python script for generating email signatures from a single (HTML) template for all employees at once
 
