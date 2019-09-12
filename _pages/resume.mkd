@@ -48,7 +48,7 @@ Debian GNU/Linux (user/admin), Microsoft Windows
 - Talent for finding and thus preventing defects
 - Perseverant
 - Eager to learn and improve
-- Desire to share/ apply what I learned
+- Desire to share and apply what I learned
 
 
 # <i class="fas fa-fw fa-graduation-cap"></i> Education
