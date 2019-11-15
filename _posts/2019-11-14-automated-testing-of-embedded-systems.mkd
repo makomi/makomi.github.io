@@ -1,0 +1,48 @@
+---
+permalink: /posts/automated-testing-of-embedded-systems
+title: "Intro to Automated Testing of Embedded Systems using SiL and HiL"
+excerpt: "This is a 30 minute presentation I held at the test automation meetup in Dortmund on Nov 13 2019 as an introduction to automated testing of embedded systems."
+categories: [embedded, automated testing, presentation]
+tags: [SOREL, SiL, HiL, meetup, CI/CD]
+toc: true
+toc_sticky: true
+last_modified_at: "2019-11-18"
+---
+
+This is a 30 minute presentation I held at the [test automation meetup](https://www.meetup.com/Dortmund-Testautomatisierung-Meetup/events/264777147/) in Dortmund on Nov 13 2019 as an introduction to automated testing of embedded systems. It is the result of close to two weeks of research, discussions, and documentation while working at [SOREL](https://sorel.de).
+
+**Slides:** [German]({{ site.url }}{{ site.baseurl }}/assets/pdf/2019-11-13 Meetup Dortmund - Testautomatisierung - Automatisiertes Testen von eingebetteten Systemen.pdf), [English]({{ site.url }}{{ site.baseurl }}/assets/pdf/2019-11-13 Meetup Dortmund - test automation - automated testing of embedded systems.pdf)
+{: .notice--info}
+
+### Main goals
+- Give an introduction to automated testing of embedded systems.
+- Highlight differences of embedded to software-only workflows (p8).
+- Propose a CI/CD development pipeline (p21).
+
+### Key points
+- Realizations regarding the software development process (p11).
+- Proposal for fixing a broken development process (p12).
+- Proposal for an embedded CI/CD infrastructure (p17).
+- A list of typical pre-commit tests (p24).
+- A list of useful tools and topics if you are just starting out (p29).
+- A list of best practices to follow when starting a new project (p31).
+
+### Index
+1. Introduction
+2. Goals
+3. What is an embedded system?
+4. What are SiL and HiL tests?
+5. About SOREL
+6. Initial situation
+7. Current development process
+8. Typical issues
+9. Realizations regarding SW dev process
+10. Solution approach
+11. New development process
+12. Current challenges
+13. Specific uncertainties and questions
+14. Appendix A: Useful tools and topics
+15. Appendix B: Best practices for new projects
+16. Image and text references
+17. Questions?
+18. Thank you!
