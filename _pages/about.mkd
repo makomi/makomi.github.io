@@ -7,9 +7,11 @@ As an embedded software engineer with a background in electrical engineering I e
 
 My strongest motivation is my desire for understanding how systems function and creating working, maintainable software. I am continuously driven to remove inefficiencies as well as causes of error from the processes I am part of.
 
-I currently work as a C/C++ embedded software engineer at [SOREL](https://sorel.de/) where I perform a mix of maintenance and development programming for heating controllers and room thermostats.
-My tasks range from building middleware to implementing application level feature requests.  
-From time to time I support the hardware side by specifying aspects of the schematic and <abbr title="printed circuit board">PCB</abbr> layout relevant to my part of the project as well as checking and debugging the result. I am in contact with external partners like <abbr title="radio frequency">RF</abbr> labs or test houses to prepare our devices for <abbr title="electromagnetic compatibility">EMC</abbr> tests or help the certification process along.
+I currently work as a C/C++ embedded software engineer at [cbb](https://cbb.de/).
+
+Previously, I worked at [SOREL](https://sorel.de/) where I performed a mix of maintenance and development programming for heating controllers and room thermostats.
+My tasks ranged from building middleware to implementing application level feature requests.  
+From time to time I supported the hardware side by specifying aspects of the schematic and <abbr title="printed circuit board">PCB</abbr> layout relevant to my part of the project as well as checking and debugging the result. I was in contact with external partners like <abbr title="radio frequency">RF</abbr> labs or test houses to prepare our devices for <abbr title="electromagnetic compatibility">EMC</abbr> tests or help the certification process along.
 
 I have been practicing [<abbr title="(Pāli) 'insight into the true nature of reality'">vipassanā</abbr>](https://en.wikipedia.org/wiki/Vipassan%C4%81) style meditation according to [S.&nbsp;N.&nbsp;Goenka](https://www.dhamma.org/en-US/about/goenka) on a daily basis since 2019. In a [blog post](https://samharris.org/how-to-meditate/) Sam&nbsp;Harris explains vipassanā's scientific approach, the basic practice, and its benefits.
 
