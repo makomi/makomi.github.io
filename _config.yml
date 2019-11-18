@@ -96,7 +96,7 @@ author:
   name             : *name
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "embedded software engineer" # "embedded systems | C/C++ | TDD | CI/CD | Python | Z-Wave"
-  location         : "Dortmund, Germany"
+  location         : "Lübeck, Germany"
   email            :
   links:
     - label: "say-hi@makomi.net"
