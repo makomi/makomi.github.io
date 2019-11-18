@@ -62,13 +62,20 @@ University of Applied Sciences Lübeck, Germany
 
 
 # <i class="fa fa-fw fa-briefcase"></i> Experience
-<small>Since 09/2015</small>  
+<small>Since 01/2020</small>  
+**C/C++ software engineer for embedded systems**  
+[cbb software GmbH](https://cbb.de/)
+
+TBD
+
+
+<small>09/2015 -- 10/2019</small>  
 **Junior C/C++ software engineer for embedded systems**  
 [SOREL GmbH](https://sorel.de/)
 
 *In general:* Maintenance and development of middleware and application logic for STM32 F7 based embedded systems in C and C++ using FreeRTOS.
 
-*Currently:* Responsible for the integration of Z-Wave into a new room thermostat product. This includes the translation of application requirements into hardware and software specifications, management and quality control of the external Z-Wave developer's work, hardware debugging and protocol testing including on-site at an external RF lab and another test house, as well as implementation of a generic network interface for communication between the Z-Wave transport layer and the resources close to the application layer.
+*Last responsibilities:* Integration of Z-Wave into a new room thermostat product. This includes the translation of application requirements into hardware and software specifications, management and quality control of the external Z-Wave developer's work, hardware debugging and protocol testing including on-site at an external RF lab and another test house, as well as implementation of a generic network interface for communication between the Z-Wave transport layer and the resources close to the application layer.
 
 
 <small>03/2012 -- 03/2015</small>  
