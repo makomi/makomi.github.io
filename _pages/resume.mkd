@@ -71,7 +71,7 @@ TBD
 
 <small>09/2015 -- 10/2019</small>  
 **Junior C/C++ software engineer for embedded systems**  
-[SOREL GmbH](https://sorel.de/)
+[SOREL GmbH Mikroelektronik](https://sorel.de/)
 
 *In general:* Maintenance and development of middleware and application logic for STM32 F7 based embedded systems in C and C++ using FreeRTOS.
 
