@@ -37,7 +37,7 @@ Everything you need to get started.
 * [Git pretty](http://justinhileman.info/article/git-pretty/): Workflow chart
 * [Making Sense of Git](https://appendto.com/2015/06/making-sense-of-git-a-visual-perspective/): Visual explanation of core Git concepts
 * [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html): Once you know a bit about how git works, this site may solidify your understanding.
-* [Git concepts simplified](http://gitolite.com/gcs.html)
+* [Git concepts simplified](http://gitolite.com/gcs.html) (slides)
 * [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
 * [Think Like (a) Git](http://think-like-a-git.net/): A guide for the perplexed.
 * [Practical Git introduction](http://marc.helbling.fr/2014/09/practical-git-introduction)
