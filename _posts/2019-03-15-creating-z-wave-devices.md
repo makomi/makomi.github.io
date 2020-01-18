@@ -9,6 +9,8 @@ toc_sticky: true
 last_modified_at: "2019-03-22"
 ---
 
+Related article: [Getting Started with Z-Wave Development (500 Series)]({{ "/posts/z-wave-getting-started-500-series" | relative_url }}) (2020-01-18)
+
 This text gives an overview of what it means to build a Z-Wave *slave* device based on the *500&nbsp;Series* chips without a separate host MCU, i.e. writing code that runs *directly on the Z-Wave chip*.
 
 **Summary**  
