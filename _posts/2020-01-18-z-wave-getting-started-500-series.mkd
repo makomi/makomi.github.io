@@ -1,0 +1,232 @@
+---
+title: Getting Started with Z-Wave Development (500 Series)
+permalink: /posts/z-wave-getting-started-500-series
+excerpt: "An introduction to developing for the 500 series of Z-Wave chips."
+categories: [getting started, product development, Z-Wave]
+tags: [Z-Wave 500 Series, IoT]
+toc: true
+toc_sticky: true
+#last_modified_at: "2020-01-19"
+---
+
+The Z-Wave protocol is relatively complex and gets more complex every year. It is difficult to get started due to the sheer number of documents and the resulting initial disorientation.
+
+This article aims to help you with developing your first (500 series) Z-Wave device by helping you get past the biggest entry barriers:
+- Which approach is best suited for our product?
+- Where do I find the information I need?
+- When should we work on what?
+- Which aspects require extra attention?
+
+
+**Warning:** This introduction focuses on the old **500 series** of Z-Wave chips and is based on how things worked back in 2019. The Z-Wave protocol is evolving quickly, so take these suggestions only as a rough orientation.
+{: .notice--warning}
+
+
+# Websites
+
+## Non-Technical
+- Consumer focused [marketing page](https://www.z-wave.com/)
+- Business focused [alliance page](https://z-wavealliance.org/)
+
+## Technical
+- [Certified Products Database](http://products.z-wavealliance.org/regions/1/categories)  
+  Database with all certified Z-Wave products including their documentation.
+- [Z-Wave Technical Service](https://www.silabs.com/support/z-wave) (ZTS)  
+  Development resources, e.g. datasheets, specifications, code, tools.
+  - [Specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification)
+  - [Certification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/certification)
+  - [Software and Tools](https://www.silabs.com/products/development-tools/software/z-wave)  
+    Embedded SDK, Controller SDK, Protocol Life Cycle.
+  - [Dev Kits](https://www.silabs.com/products/development-tools/wireless/mesh-networking/z-wave)
+  - [Search](hhttps://www.silabs.com/support/resources.p-wireless_z-wave)
+
+
+# Technical Documentation
+In order to get started with Z-Wave development, it helps to get the big picture, i.e. get familiar with the Z-Wave specific concepts.
+
+Know which information is available, where you can find it, and don't try to understand everything at once.
+You can always find additional documents via SiLab's [Z-Wave search](https://www.silabs.com/support/resources.p-wireless_z-wave).
+An overview of the most important technical documents is available in the [References](http://z-wavecertification.sigmadesigns.com/wiki/index.php?title=References) article of the *Z-Wave Cert Portal Wiki*---only accessible by Z-Wave members.
+
+**To get started quickly**, follow the [product development steps](#product-development-steps) outlined below. They'll show you what to read at which point in the development process.
+Only read additional documentation if you are stuck.
+
+## Overview: quick
+1. [[SRN13926](https://www.silabs.com/documents/login/release-notes/SRN13926-Software-Release-Note-Z-Wave-500-Series-SDK.pdf)] Z-Wave 500 Series SDK v6.81.01  
+   SRN13926-5 pages 2-4: overview of Z-Wave technology.
+2. [[APL13475](https://www.silabs.com/documents/login/application-notes/APL13475-Z-Wave-Development-Basics.pdf)] Z-Wave Development Basics
+3. Overview of the dev process and what to consider: [Creating Z-Wave Devices]({{ "/posts/creating-z-wave-devices" | relative_url }})
+
+## Overview: detailed
+Application Notes  
+[[APL12955](https://www.silabs.com/documents/login/application-notes/APL12955-Z-Wave-Multi-Channel-Basics.pdf)] Z-Wave Multi Channel Basics  
+[[APL12956](https://www.silabs.com/documents/login/application-notes/APL12956-Z-Wave-Association-Basics.pdf)] Z-Wave Association Basics  
+[[APL12957](https://www.silabs.com/documents/login/application-notes/APL12957-Z-Wave-Battery-Support-Basics.pdf)] Z-Wave Battery Support Basics  
+[[APL13031](https://www.silabs.com/documents/login/application-notes/APL13031-Z-Wave-Networking-Basics.pdf)] Z-Wave Networking Basics  
+[[APL13084](https://www.silabs.com/documents/login/application-notes/APL13084-Z-Wave-Control-Application-Basics.pdf)] Z-Wave Control Application Basics  
+[[APL13128](https://www.silabs.com/documents/login/application-notes/APL13128-Z-Wave-Time-Date-Basics.pdf.pdf)] Z-Wave Time and Date Basics  
+[[APL13298](https://www.silabs.com/documents/login/application-notes/APL13298-Z-Wave-Device-Configuration-Basics.pdf)] Z-Wave Device Configuration Basics
+
+## Specification documents: generic
+1. Device & Role Type Specification  
+  [[SDS11847](https://www.silabs.com/documents/login/miscellaneous/SDS11847-Z-Wave-Plus-Device-Type-Specification.pdf)] Z-Wave Plus Device Type Specification  
+  [[SDS11846](https://www.silabs.com/documents/login/miscellaneous/SDS11846-Z-Wave-Plus-Role-Type-Specification.pdf)] Z-Wave Plus Role Type Specification  
+2. Command Class Specification  
+  [[SDS13781](https://www.silabs.com/documents/login/miscellaneous/SDS13781-Z-Wave-Application-Command-Class-Specification.pdf)] Z-Wave Application Command Class Specification  
+  [[SDS13782](https://www.silabs.com/documents/login/miscellaneous/SDS13782-Z-Wave-Management-Command-Class-Specification.pdf)] Z-Wave Management Command Class Specification  
+  [[SDS13783](https://www.silabs.com/documents/login/miscellaneous/SDS13783-Z-Wave-Transport-Encapsulation-Command-Class-Specification.pdf)] Z-Wave Transport Encapsulation Command Class Specification  
+  [[SDS13784](https://www.silabs.com/documents/login/miscellaneous/SDS13784-Z-Wave-Network-Protocol-Command-Class-Specification.pdf)] Z-Wave Network-Protocol Command Class Specification  
+
+## Specification documents: specific
+1. Z/IP  
+  [[SDS11445](https://www.silabs.com/documents/login/miscellaneous/SDS11445-IP-Architecture-Framework-Z-Wave.pdf)] IP Architecture Framework for Z-Wave (Z/IP)  
+  [INS12503] Z/IP Gateway Porting Process  
+  [[SRN14206](https://www.silabs.com/documents/login/release-notes/SRN14206-Software-Release-Note-ZI-GW-SDK-2-81-00.pdf)] Z/IP GW SDK 2.81.00  
+  [[SDS12089](https://www.silabs.com/documents/login/miscellaneous/SDS12089-ZIP-Gateway-Bootstrapping.pdf)] Z/IP Gateway Bootstrapping  
+  [[INS12903](https://www.silabs.com/documents/login/user-guides/INS12903-Z-Ware-Web-UserGuide.pdf)] Z-Ware Web User Guide  
+2. Hardware: Chip  
+  [[INS12213-14](https://www.silabs.com/documents/login/user-guides/INS12213-14.pdf)] 500 Series Integration Guide  
+  [[SDS12467](https://www.silabs.com/documents/login/miscellaneous/SDS12467-500-Series-Z-Wave-Chip-NVR-Flash-Page-Contents.pdf)] 500 Series Z-Wave Chip NVR Flash Page Contents  
+  [[INS12524](https://www.silabs.com/documents/login/user-guides/INS12524-500-Series-Calibration-User-Guide.pdf)] 500 Series Calibration User Guide  
+  [[DSH12625-9](https://www.silabs.com/documents/login/data-sheets/DSH12625-9.pdf)] ZM5101 Data Sheet
+3. Hardware: RF  
+  [Radio frequencies](https://www.silabs.com/products/wireless/mesh-networking/z-wave/benefits/technology/global-regions?cid=nat-acq-zwv-041818) for different world regions.  
+  [[APL10045](https://www.silabs.com/documents/login/application-notes/APL10045-Antennas-Short-Range%20-Devices.pdf)] Application Note - Antennas for Short Range Devices  
+  [[INS12880](https://www.silabs.com/documents/login/user-guides/INS12880-Micro-RF-Link-User-guide.pdf)] Micro RF LinkX for 500 Series
+
+## Guidelines: actual programming
+1. On-chip via C API  
+  [[INS12366](https://www.silabs.com/documents/login/user-guides/INS12366%20-Instruction-Working-500-Series-Environment-User-Guide.pdf)] Working in 500 Series Environment User Guide  
+  [[INS13954](https://www.silabs.com/documents/login/user-guides/INS13954-Instruction-Z-Wave-500-Series-Appl-Programmers-Guide-v6_81_0x.pdf)] Z-Wave 500 Series Appl. Programmers Guide v6.81.0x  
+  [[INS13953](https://www.silabs.com/documents/login/reference-manuals/INS13953-Instruction-for-Z-Wave-Plus-Application-Framework-v6.8x.0x.pdf)] Z-Wave Plus Application Framework v6.8x.0x  
+  ... SW architecture overview on page 4 ff.  
+  [[SRN13926](https://www.silabs.com/documents/login/release-notes/SRN13926-Software-Release-Note-Z-Wave-500-Series-SDK.pdf)] Z-Wave 500 Series SDK v6.81.02  
+  [[ERN13927](https://www.silabs.com/documents/login/errata/ERN13927-Known-Test-Observations-SDK.pdf)] Known Test Observations SDK v6.81.02  
+  [DrZWave] [8051 8-bit CPU Coding Tricks & Tips](https://drzwave.blog/2018/07/23/8051-8-bit-cpu-coding-tricks-tips/)  
+  [Creating Z-Wave Devices]({{ "/posts/creating-z-wave-devices" | relative_url }})
+2. On-host via Serial API  
+  [[INS12350]](https://www.silabs.com/documents/login/user-guides/INS12350-Serial-API-Host-Appl.-Prg.-Guide.pdf) Serial API Host Appl. Prg. Guide  
+  [[INS10245]](https://www.silabs.com/documents/login/user-guides/INS10245-Z-Wave-Bridge-User-Guide.pdf)] Z-Wave Bridge User Guide
+
+## Guidelines: certification
+1. Process  
+  [Cert Portal Wiki] [Description of the certification program and process](https://z-wavecertification.silabs.com/wiki/index.php/Z-Wave_Certification_Program)  
+  [[INS10638](https://www.silabs.com/documents/login/miscellaneous/INS10638-Z-Wave-Certification-Overview.pdf)] Z-Wave Certification Overview  
+  [[INS10637](https://www.silabs.com/documents/login/miscellaneous/INS10637-Z-Wave-Certification-Form-V8-5.pdf)] Z-Wave Certification Form V8.5  
+  [STP14205] SW Test Plan - Supervision Command Class certification tests  
+  [SDS13783] Z-Wave Transport-Encapsulation Command Class Specification  
+  ... e.g. "Key Management" for S2.
+2. Testing/ Reliability  
+  [Cert Portal Wiki] [Table of Contents](https://z-wavecertification.silabs.com/wiki/index.php/Table_of_Contents)  
+  [[CTS10999](https://www.silabs.com/documents/login/miscellaneous/CTS10999-Z-Wave-Certification-Test-Specification.pdf)] Z-Wave Certification Test Specification  
+  [[INS10336](https://www.silabs.com/documents/login/user-guides/INS10336-Z-Wave-Reliability-Test-Guideline.pdf)] Z-Wave Reliability Test Guideline
+
+
+# Product Development Steps
+1. Define the customer's requirements.
+2. Determine the technical approach.
+   1. Find out in which general direction the development will go.
+      1. Select the [world region](https://www.silabs.com/products/wireless/mesh-networking/z-wave/benefits/technology/global-regions?cid=nat-acq-zwv-041818).
+      2. Determine *Device Type* [[SDS11847](https://www.silabs.com/documents/login/miscellaneous/SDS11847-Z-Wave-Plus-Device-Type-Specification.pdf)] and *Role Type* [[SDS11846](https://www.silabs.com/documents/login/miscellaneous/SDS11846-Z-Wave-Plus-Role-Type-Specification.pdf)] by also looking at the *Device Classes* [[SDS10242](https://www.silabs.com/documents/login/miscellaneous/SDS10242-Z-Wave-Device-Class-Specification.pdf)].
+      3. Select SW tech stack (ZW SDK vs. Z/IP GW).
+   2. Start HW development (on-chip vs. on-host, ext. NVM, production programming, ...).
+      1. Select the Z-Wave Radio Module/ SoC and buy the appropriate [Dev Kit](https://www.silabs.com/products/development-tools/wireless/mesh-networking/z-wave).  
+         Things to consider: Feature set, production volume, antenna options.  
+         Before you decide to use a SoC ALWAYS contact your assigned <abbr title="Field Application Engineer">FAE</abbr> or Z-Wave Sales Manager to discuss your choice.
+      2. Perform *HW tests* as soon as possible, especially to verify the RF performance.  
+         Remember to *tune the antenna* beforehand, if it is a new (board) design.  
+         Choose and place your antenna wisely. Use the available application notes and guides.  
+         Make sure the PCB is layouted according to RF best practices.  
+   3. Determine missing details so the SW implementation can start.
+      1. Start updating your *Preferred Devices*.
+      2. Start updating your *Device Data*.
+      3. Determine <abbr title="Command Classes">CCs</abbr> to use for the application (version, [support/control](https://z-wavecertification.silabs.com/wiki/index.php?title=Application_Support)) + explain the choice.
+      4. Create [Cert Case](https://z-wavecertification.silabs.com/) and make sure it reflects your current approach.  
+         (network role, CCs to implement, hardware configuration, ...)
+      5. Update list of CCs to implement based on feedback from Cert Case.
+3. Start the SW implementation and non-technical documentation (based on what the Cert Case requires).  
+   (a) Setup SW development environment + start implementation of CCs.  
+   (b) Start designing/ implementing a SW architecture connecting the ZW implementation to the app layer---in case you implement the app on a *host MCU*.  
+   (c) Ensure a spec compliant *GUI*.  
+   (d) Start *Market Cert* (Product Information form blocks completion of the technical Certification).  
+   (e) Create non-technical part of the *End User Documentation*.  
+   Test as early and as often as possible. Focus on implementing usable/ testable features in small   increments.  
+   (Optional) Ask Test House for guidance on performing the tests.  
+   (Optional) Ask Test House to give you advice on which implementation choices make the most sense in practice.  
+   (Optional) Let the Test House's SW dev do any low-level Z-Wave implementation for you.  
+   Once <abbr title="Minimal Viable Product">MVP</abbr> is ready: Start of in-house test phase.
+4. Make sure, it was implemented correctly and document it.  
+   (a) Start *Self-Cert* with Cert Case.  
+   (b) Create technical part of the End User Documentation.  
+   Self-Cert can start in parallel to the CC implementation.  
+   Self-Cert tests the Device and Role Type requirements as well as the correct implementation of the supported Command Classes.  
+   (Optional) Ask Test House for guidance on performing the tests.  
+   Once SW is feature complete: Start of test phase with select customers.
+5. Start the technical certification once everything seems to be implemented correctly.
+   1. (Optional) Pre-Cert  
+      Let the Test House perform a Pre-Cert so you know how well you are doing.  
+      Can be converted into a full Cert, if it looks good. This saves time and reduces risk due to flexibility.  
+      One does not have to wait long for a Pre-Cert and a Pre-Cert can be stopped any time, while a full Cert has a high up-front cost.
+   2. Technical Certification at Test House  
+      The certification will fail, if more than three technical issues (CC/ protocol) are discovered.
+      Five document issues count as one technical issue. [See details](https://z-wavecertification.silabs.com/wiki/index.php/Z-Wave_Certification_Program).  
+      You will likely fail at your first attempt---especially if you are building a controller.
+6. Set up S2 (and SmartStart) label printer
+7. Set up Production Testing  
+   See [INS10343] for a description of the test procedure.  
+   Test software is provided as part of the Z-Wave Embedded SDK: Production Test DUT/ Generator and PVT files.  
+   Typical tests:  
+   (a) RF performance  
+   (b) Open/ shorts  
+   (c) Power consumption  
+8. (Optional) Add device to <abbr title="Free and Open Source Software">FOSS</abbr> registries.  
+   Example: *Horstmann SRT323* in [OpenZWave](https://github.com/OpenZWave/open-zwave/blob/master/config/horstmann/srt323.xml).
+9. Product release
+
+
+# Product Development Checklist
+A simple way to track overall progress and report to management.
+
+Example states:  
+**TODO**: no work has been done yet  
+**WIP**: task is currently worked on  
+**blocked**: task was interrupted b/c something is missing  
+**DONE**: no more work needs to be done
+
+Each state can be color-coded to represent it's context:  
+<span style="background-color: #FF9999;">red</span>: high risk of failure/ problematic.  
+<span style="background-color: yellow;">yellow</span>: medium risk of failure/ may be a lot of work or complicated.  
+<span style="background-color: #99FF99;">green</span>: low risk of failure/ no issues.
+
+| State  | Item                                                       | Comment |
+|--------|------------------------------------------------------------|---------|
+|        | 1. Functional and technical specification                  |         |
+|        | 2. Device Type                                             |         |
+|        | 3. Role Type                                               |         |
+|        | 4. Security Class                                          |         |
+|        | 5. ZW SW versions we build on                              |         |
+|        | 6. SW tech stack we decided to use                         |         |
+|        | 7. HW development, EMC performance                         |         |
+|        | 8. ZW Preferred Devices                                    |         |
+|        | 9. ZW Device Data                                          |         |
+|        | 10. Cert Case: "Development and Manufacturing" section     |         |
+|        | 11. CCs we want to use for the app                         |         |
+|        | 12. CCs the Cert Case requires us to implement             |         |
+|        | 13. Implement CCs                                          |         |
+|        | 14. SW architecture (ZW impl <-> app)                      |         |
+|        | 15. Spec compliant GUI                                     |         |
+|        | 16. Market Cert                                            |         |
+|        | 17. End User Documentation: non-technical                  |         |
+|        | 18. End User Documentation: technical                      |         |
+|        | 19. Cert: Self-Cert                                        |         |
+|        | 20. Cert: Pre-Cert at test house                           |         |
+|        | 21. Cert: Certification at test house                      |         |
+|        | 22. Production: setup S2 (and SmartStart) label printer    |         |
+|        | 23. Production: testing                                    |         |
+|        | 24. Release                                                |         |
+
+
+# After the Certification
+Track all future changes of your software's Z-Wave part with an internal version number.
+This will make it easier to recertify subsequent stable releases.
+
