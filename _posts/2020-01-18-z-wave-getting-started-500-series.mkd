@@ -6,10 +6,10 @@ categories: [getting started, product development, Z-Wave]
 tags: [Z-Wave 500 Series, IoT]
 toc: true
 toc_sticky: true
-#last_modified_at: "2020-01-19"
+last_modified_at: "2020-01-20"
 ---
 
-The Z-Wave protocol is relatively complex and gets more complex every year. It is difficult to get started due to the sheer number of documents and the resulting initial disorientation.
+The Z-Wave protocol is relatively complex and gets more complex every year. It is difficult to get started due to the sheer number of documents.
 
 This article aims to help you with developing your first (500 series) Z-Wave device by helping you get past the biggest entry barriers:
 - Which approach is best suited for our product?
@@ -30,7 +30,7 @@ This article aims to help you with developing your first (500 series) Z-Wave dev
 
 ## Technical
 - [Certified Products Database](http://products.z-wavealliance.org/regions/1/categories)  
-  Database with all certified Z-Wave products including their documentation.
+  Database with all certified Z-Wave products and their documentation.
 - [Z-Wave Technical Service](https://www.silabs.com/support/z-wave) (ZTS)  
   Development resources, e.g. datasheets, specifications, code, tools.
   - [Specification](https://www.silabs.com/products/wireless/mesh-networking/z-wave/specification)
@@ -38,7 +38,7 @@ This article aims to help you with developing your first (500 series) Z-Wave dev
   - [Software and Tools](https://www.silabs.com/products/development-tools/software/z-wave)  
     Embedded SDK, Controller SDK, Protocol Life Cycle.
   - [Dev Kits](https://www.silabs.com/products/development-tools/wireless/mesh-networking/z-wave)
-  - [Search](hhttps://www.silabs.com/support/resources.p-wireless_z-wave)
+  - [Search](https://www.silabs.com/support/resources.p-wireless_z-wave)
 
 
 # Technical Documentation
@@ -46,10 +46,14 @@ In order to get started with Z-Wave development, it helps to get the big picture
 
 Know which information is available, where you can find it, and don't try to understand everything at once.
 You can always find additional documents via SiLab's [Z-Wave search](https://www.silabs.com/support/resources.p-wireless_z-wave).
-An overview of the most important technical documents is available in the [References](http://z-wavecertification.sigmadesigns.com/wiki/index.php?title=References) article of the *Z-Wave Cert Portal Wiki*---only accessible by Z-Wave members.
+An overview of the most important technical documents is available in the [References](https://z-wavecertification.silabs.com/wiki/index.php?title=References) article of the *Z-Wave Cert Portal Wiki*---only accessible by Z-Wave members.
 
 **To get started quickly**, follow the [product development steps](#product-development-steps) outlined below. They'll show you what to read at which point in the development process.
 Only read additional documentation if you are stuck.
+
+**Note:** Always make sure to work with the latest documentation, tools, firmware binaries, and code samples.
+{: .notice--info}
+
 
 ## Overview: quick
 1. [[SRN13926](https://www.silabs.com/documents/login/release-notes/SRN13926-Software-Release-Note-Z-Wave-500-Series-SDK.pdf)] Z-Wave 500 Series SDK v6.81.01  
@@ -94,7 +98,7 @@ Application Notes
   [[APL10045](https://www.silabs.com/documents/login/application-notes/APL10045-Antennas-Short-Range%20-Devices.pdf)] Application Note - Antennas for Short Range Devices  
   [[INS12880](https://www.silabs.com/documents/login/user-guides/INS12880-Micro-RF-Link-User-guide.pdf)] Micro RF LinkX for 500 Series
 
-## Guidelines: actual programming
+## Guidelines: programming
 1. On-chip via C API  
   [[INS12366](https://www.silabs.com/documents/login/user-guides/INS12366%20-Instruction-Working-500-Series-Environment-User-Guide.pdf)] Working in 500 Series Environment User Guide  
   [[INS13954](https://www.silabs.com/documents/login/user-guides/INS13954-Instruction-Z-Wave-500-Series-Appl-Programmers-Guide-v6_81_0x.pdf)] Z-Wave 500 Series Appl. Programmers Guide v6.81.0x  
@@ -148,7 +152,7 @@ Application Notes
    (a) Setup SW development environment + start implementation of CCs.  
    (b) Start designing/ implementing a SW architecture connecting the ZW implementation to the app layer---in case you implement the app on a *host MCU*.  
    (c) Ensure a spec compliant *GUI*.  
-   (d) Start *Market Cert* (Product Information form blocks completion of the technical Certification).  
+   (d) Start *Market Cert* (Product Information form hinders completion of the technical Certification).  
    (e) Create non-technical part of the *End User Documentation*.  
    Test as early and as often as possible. Focus on implementing usable/ testable features in small   increments.  
    (Optional) Ask Test House for guidance on performing the tests.  
@@ -215,9 +219,9 @@ Each state can be color-coded to represent it's context:
 |        | 13. Implement CCs                                          |         |
 |        | 14. SW architecture (ZW impl <-> app)                      |         |
 |        | 15. Spec compliant GUI                                     |         |
-|        | 16. Market Cert                                            |         |
-|        | 17. End User Documentation: non-technical                  |         |
-|        | 18. End User Documentation: technical                      |         |
+|        | 16. End User Documentation: non-technical                  |         |
+|        | 17. End User Documentation: technical                      |         |
+|        | 18. Cert: Market Cert                                      |         |
 |        | 19. Cert: Self-Cert                                        |         |
 |        | 20. Cert: Pre-Cert at test house                           |         |
 |        | 21. Cert: Certification at test house                      |         |
