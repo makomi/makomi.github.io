@@ -9,7 +9,6 @@ toc_sticky: true
 last_modified_at: "2019-11-18"
 ---
 
-This is a 30 minute presentation I held at the [test automation meetup](https://www.meetup.com/Dortmund-Testautomatisierung-Meetup/events/264777147/) in Dortmund on Nov 13 2019 as an introduction to automated testing of embedded systems. It is the result of close to two weeks of research, discussions, and documentation while working at [SOREL](https://sorel.de).
 This is a 30 minute presentation I held at the [test automation meetup](https://www.meetup.com/Dortmund-Testautomatisierung-Meetup/events/264777147/) in Dortmund on Nov 13, 2019, as an introduction to automated testing of embedded systems. It is the result of close to two weeks of research, discussions, and documentation while working at [SOREL](https://sorel.de).
 
 **Slides:** [German]({{ site.url }}{{ site.baseurl }}/assets/pdf/2019-11-13 Meetup Dortmund - Testautomatisierung - Automatisiertes Testen von eingebetteten Systemen.pdf), [English]({{ site.url }}{{ site.baseurl }}/assets/pdf/2019-11-13 Meetup Dortmund - test automation - automated testing of embedded systems.pdf)
