@@ -71,7 +71,7 @@ Sign up for [GitHub](https://github.com/) and create a new private repository vi
 Once you are done, create a new repository on your computer while replacing `USER` and `REPO` with your choices from above and push it to GitHub:
 ```
 $ mkdir REPO && cd REPO
-$ echo "# test" >> README.mkd
+$ echo "# test" > README.mkd
 $ git init
 $ git add README.mkd
 $ git commit -m "first commit"
@@ -83,7 +83,7 @@ $ git push -u origin master
 ## Step #4: Making a change
 Make a small change, commit it, and push it to the remote repo `origin/master`:
 ```
-$ echo "# Bachelor Thesis" >> README.mkd
+$ echo "# Bachelor Thesis" > README.mkd
 $ git add --all . && git commit -m "readme: Set the title"
 $ git push
 ```
