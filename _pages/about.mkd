@@ -7,7 +7,7 @@ As an embedded software engineer with a background in electrical engineering I e
 
 My strongest motivation is my desire for understanding how systems function and creating working, maintainable software. I am continuously driven to remove inefficiencies as well as causes of error from the processes I am part of.
 
-I currently work as a C/C++ embedded software engineer at [cbb](https://cbb.de/).
+I currently work as a C/C++ embedded software engineer at [cbb](https://cbb.de/) on improving the <abbr title="Hardware in the Loop">HiL</abbr> test stand.
 
 Previously, I worked at [SOREL](https://sorel.de/) where I performed a mix of maintenance and development programming for heating controllers and room thermostats.
 My tasks ranged from building middleware to implementing application level feature requests.  
