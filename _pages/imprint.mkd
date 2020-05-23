@@ -4,12 +4,12 @@ title: "Impressum"
 excerpt: "Imprint for the personal website of Matthias Miehl."
 ---
 
-*[German law demands this]*
+*[German law demands this: [§5 TMG](https://www.gesetze-im-internet.de/tmg/__5.html)]*
 
 Matthias Miehl  
-Stockumer Straße 217  
-44225 Dortmund  
+Lachswehrallee 17  
+23558 Lübeck  
 Germany
 
 <i class="fas fa-fw fa-envelope"></i> impressum at makomi punkt net  
-<i class="fas fa-fw fa-phone"></i> +49 231 586 896 71
+<i class="fas fa-fw fa-phone"></i> +49 451 160 826 57
