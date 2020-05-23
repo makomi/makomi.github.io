@@ -109,7 +109,7 @@ embedded systems, TDD, CI/CD, communication protocols, clean code, software engi
 sci-fi books, meditation, psychology, society
 
 **Software**  
-i3wm, Git, Doxygen, Qubes OS and Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
+i3wm, Git, Doxygen, Debian GNU/Linux, LaTeX, gnuplot, vim, zsh
 
 <!--**Meetups**  
 Chaotikum, Softwerkskammer Ruhr, ...-->
