@@ -118,6 +118,15 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 - Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
 
 **People I follow**  
-[Embedded Artistry](https://embeddedartistry.com), [Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), [EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ)<!--,
-[Drew DeVault](https://www.patreon.com/sircmpwn), [Travis Goodspeed](https://travisgoodspeed.blogspot.com/)-->
+[Embedded Artistry](https://embeddedartistry.com), 
+[PVS-Studio blog](https://www.viva64.com/en/b/), 
+[Jack Ganssle newsletter](http://www.ganssle.com/tem-back.htm), 
+[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), 
+[EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ), 
+[TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw), 
+[Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA), 
+[James Bruton](https://www.youtube.com/user/jamesbruton/)<!--, 
+[Drew DeVault](https://www.patreon.com/sircmpwn), 
+[Travis Goodspeed](https://travisgoodspeed.blogspot.com/)
+-->
 
