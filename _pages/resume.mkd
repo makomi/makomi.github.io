@@ -121,6 +121,7 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 [Embedded Artistry](https://embeddedartistry.com), 
 [PVS-Studio blog](https://www.viva64.com/en/b/), 
 [Jack Ganssle newsletter](http://www.ganssle.com/tem-back.htm), 
+[memfault](https://interrupt.memfault.com/blog/), 
 [Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), 
 [EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ), 
 [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw), 
