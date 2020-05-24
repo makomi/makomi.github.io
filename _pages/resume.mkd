@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "Résumé"
 permalink: /resume/
 excerpt: "Résumé of Matthias Miehl (embedded software engineer)."
 toc: true
