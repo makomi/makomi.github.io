@@ -227,7 +227,7 @@ For example, for the Switch Binary Command Class (ID `0x25`) you need to process
 
 For our example of a "complicated" device (see above), it will look something like this in pseudo-code:
 
-```
+```c
 switch (pCmd[0]) {
   case COMMAND_CLASS_MULTI_CHANNEL:
     switch (pCmd[1]) {
