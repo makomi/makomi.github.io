@@ -119,16 +119,18 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 
 **People I follow**  
 [Embedded Artistry](https://embeddedartistry.com/), 
+[Jason Turner](https://www.youtube.com/c/JasonTurner-lefticus/), 
 [Jack Ganssle](http://www.ganssle.com/), 
 [memfault](https://interrupt.memfault.com/blog/), 
 [PVS-Studio](https://www.viva64.com/en/b/), 
+[Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA), 
 [embedded.fm](https://embedded.fm/), 
 [EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ), 
 [Martin Fowler](https://martinfowler.com/), 
-[James Bruton](https://www.youtube.com/user/jamesbruton/),
+[James Bruton](https://www.youtube.com/user/jamesbruton/), 
 [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw), 
-[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), 
-[Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA)<!--, 
+[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w)
+<!--, 
 [Drew DeVault](https://www.patreon.com/sircmpwn), 
 [Travis Goodspeed](https://travisgoodspeed.blogspot.com/)
 -->
