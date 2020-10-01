@@ -80,7 +80,7 @@ Select [`git push`](https://onlywei.github.io/explain-git-with-d3/#push) on the 
 
 This is an example of how a `pull` will result in a merge commit, if the `local` and `remote` branches each have commits that are not part of the other.
 
-[![Git_push_-_pull_resulting_in_merge]({{ site.url }}{{ site.baseurl }}//assets/images/git/Git_push_-_pull_resulting_in_merge.png)]({{ site.url }}{{ site.baseurl }}//assets/images/git/Git_push_-_pull_resulting_in_merge.png)
+[![Git_push_-_pull_resulting_in_merge]({{ site.url }}{{ site.baseurl }}/assets/images/git/Git_push_-_pull_resulting_in_merge.png)]({{ site.url }}{{ site.baseurl }}/assets/images/git/Git_push_-_pull_resulting_in_merge.png)
 
 ### `pull --rebase` resulting in linear history
 Select [`git pull`](https://onlywei.github.io/explain-git-with-d3/#pull) on the website to get the initial setup.
@@ -90,7 +90,7 @@ In this scenario you based your work on the remote branch `origin/master` and co
 
 The easiest way to deal with this, is to rebase your local changes on top of the new changes that were introduced to `orign/master`. This is done via `git pull --rebase` respectively `git pull --rebase origin master`. After you resolved any merge conflicts, `origin/master` is now again a subset of your `master` allowing you to push your new commits to `origin/master`.
 
-[![Git_pull_-_pull_--rebase_resulting_in_linear_history]({{ site.url }}{{ site.baseurl }}//assets/images/git/Git_pull_-_pull_--rebase_resulting_in_linear_history.png)]({{ site.url }}{{ site.baseurl }}//assets/images/git/Git_pull_-_pull_--rebase_resulting_in_linear_history.png)
+[![Git_pull_-_pull_--rebase_resulting_in_linear_history]({{ site.url }}{{ site.baseurl }}/assets/images/git/Git_pull_-_pull_--rebase_resulting_in_linear_history.png)]({{ site.url }}{{ site.baseurl }}/assets/images/git/Git_pull_-_pull_--rebase_resulting_in_linear_history.png)
 
 **Hint:** In practice you can perform an *interactive* rebase via `git pull --rebase=interactive` to see which commits will be applied. This gives you the opportunity to review what will be done and cancel/modify it, if necessary.
 {: .notice--info}
