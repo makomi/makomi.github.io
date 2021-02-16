@@ -89,13 +89,13 @@ TBD
 
 # <i class="fas fa-fw fa-users"></i> Voluntary work
 **[#StopWatchingUs Lübeck](http://wiki.chaotikum.org/projekte:demonstration:stopwatchingus/)**  
-Establishment of the group; organization of meetings, CryptoParties, and protests; writing texts and doing presentations. See the project's website for details and material.
+Establishment of the group; organization of meetings, CryptoParties, and protests; writing texts and giving presentations. See the project’s website for details and material.
 
 **[Chaotikum](https://chaotikum.org/)**  
 Help maintain the IT infrastructure, organize Lübeck's first national "Chaos macht Schule" meeting, and administer some of the mailing lists.
 
 **[Freifunk Lübeck](http://luebeck.freifunk.net/)**  
-`fastd` key management, conflict resolution, establishing monthly community meetings as a basis for continued reflection and project improvement
+`fastd` key management, conflict resolution, establishing monthly community meetings as a basis for continued reflection and project improvement.
 
 **[WebMontag Lübeck](http://webmontag.de/location/luebeck/2015-07-20)**  
 Establishment of the group and organization of the first five events ... until I moved away.
