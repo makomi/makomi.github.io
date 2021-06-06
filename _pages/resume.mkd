@@ -36,6 +36,7 @@ Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD.
 Working knowledge of Make and SCons.
 
 **Protocols**  
+CANopen.  
 Working knowledge of Z-Wave (500 Series, Controllers and End Devices).
 
 **PC OS**  
@@ -103,13 +104,13 @@ Establishment of the group and organization of the first five events ... until I
 
 # <font color="#bd2727"><i class="fa fa-fw fa-heart"></i></font> Favourites
 **Technical topics**  
-embedded systems, TDD, CI/CD, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, OPSEC, FOSS
+embedded systems, <abbr title="Test-Driven Development">TDD</abbr>, <abbr title="Continuous Integration / Continuous Deployment">CI/CD</abbr>, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, <abbr title="operational security">OPSEC</abbr>, <abbr title="Free and Open Source Software">FOSS</abbr>
 
 **Non-technical topics**  
-sci-fi books, meditation, psychology, society
+piano, sci-fi books, meditation, psychology, society
 
 **Software**  
-i3wm, Git, Doxygen, Arch GNU/Linux, Debian GNU/Linux, LaTeX, gnuplot, vim, Zsh
+i3wm, Git, Doxygen, Arch GNU/Linux, Debian GNU/Linux, LaTeX, gnuplot, vim, Zsh, MuseScore
 
 <!--**Meetups**  
 Chaotikum, Softwerkskammer Ruhr, ...-->
@@ -118,6 +119,7 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 - Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
 
 **People I follow**  
+[Neura Pod](https://www.youtube.com/channel/UCDukC60SYLlPwdU9CWPGx9Q/), 
 [Embedded Artistry](https://embeddedartistry.com/), 
 [Jason Turner](https://www.youtube.com/c/JasonTurner-lefticus/), 
 [Jack Ganssle](http://www.ganssle.com/), 
@@ -129,7 +131,8 @@ Chaotikum, Softwerkskammer Ruhr, ...-->
 [Martin Fowler](https://martinfowler.com/), 
 [James Bruton](https://www.youtube.com/user/jamesbruton/), 
 [TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw), 
-[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w)
+[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), 
+[Dr. Greger](https://nutritionfacts.org/)
 <!--, 
 [Drew DeVault](https://www.patreon.com/sircmpwn), 
 [Travis Goodspeed](https://travisgoodspeed.blogspot.com/)
