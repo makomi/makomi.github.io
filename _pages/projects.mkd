@@ -27,3 +27,6 @@ Python script for generating an analogue clock timer template
 <big>[**Freifunk_git-add-keys**](https://github.com/makomi/Freifunk_git-add-keys)</big>  
 BASH script for bulk adding fastd-keys to a Freifunk community's Git repo
 
+<big>[**mkdocs-template**](https://github.com/makomi/mkdocs-template)</big>  
+An MkDocs project template with Material as a Git submodule
+
