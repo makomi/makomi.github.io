@@ -110,7 +110,7 @@ embedded systems, <abbr title="Test-Driven Development">TDD</abbr>, <abbr title=
 piano, sci-fi books, meditation, psychology, society
 
 **Software**  
-i3wm, Git, Doxygen, Arch GNU/Linux, Debian GNU/Linux, LaTeX, gnuplot, vim, Zsh, MuseScore
+i3wm, Git, Doxygen, Arch GNU/Linux, Debian GNU/Linux, LaTeX, gnuplot, vim, pytest, Zsh, MuseScore
 
 <!--**Meetups**  
 Chaotikum, Softwerkskammer Ruhr, ...-->
