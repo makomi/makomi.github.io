@@ -6,10 +6,22 @@ categories: [Git, getting started]
 tags: [documentation, visualization]
 toc: true
 toc_sticky: true
-last_modified_at: "2019-04-07"
+last_modified_at: "2021-07-29"
 ---
 
 List of resources that will give you a good understanding of how to use Git.
+
+
+## Quick start summary
+If you want to just get started, take a look at these links and ignore the other sections for now. You can come back later and look around some more.
+
+1. [GitHub's Git Handbook](https://guides.github.com/introduction/git-handbook/)
+2. [Making Sense of Git](https://www.developintelligence.com/blog/2015/06/making-sense-of-git-a-visual-perspective/): Visual explanation of core Git concepts
+3. The [Pro Git Book](https://git-scm.com/book/en/v2)'s first three chapters. The remaining chapters go beyond the absolute basics and will be useful later on.
+  * Chapter 1: [Getting Started](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+  * Chapter 2: [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+  * Chapter 3: [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
+4. [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html): Once you know a bit about how git works, this site may solidify your understanding.
 
 
 ## Fundamentals
@@ -35,7 +47,7 @@ Everything you need to get started.
 * [The simple guide](https://rogerdudler.github.io/git-guide/)
 * [The Git parable](http://tom.preston-werner.com/2009/05/19/the-git-parable.html): Mental creation of a Git-like system from the ground up. Explains the function of each part and how they complement each other.
 * [Git pretty](http://justinhileman.info/article/git-pretty/): Workflow chart
-* [Making Sense of Git](https://appendto.com/2015/06/making-sense-of-git-a-visual-perspective/): Visual explanation of core Git concepts
+* [Making Sense of Git](https://www.developintelligence.com/blog/2015/06/making-sense-of-git-a-visual-perspective/): Visual explanation of core Git concepts
 * [A Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html): Once you know a bit about how git works, this site may solidify your understanding.
 * [Git concepts simplified](http://gitolite.com/gcs.html) (slides)
 * [Git from the bottom up](https://jwiegley.github.io/git-from-the-bottom-up/)
