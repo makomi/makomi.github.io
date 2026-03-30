@@ -11,6 +11,10 @@ last_modified_at: "2021-07-29"
 
 List of resources that will give you a good understanding of how to use Git.
 
+Why I like working with Git despite its complexity and why I think it makes my life a lot easier:
+> "To do difficult things in the simplest way, we need a lot of options. Complexity is necessary because it gives us the functionality we need."
+Source: [Why Life Can’t Be Simpler](https://fs.blog/2020/10/why-life-cant-be-simpler/), fs.blog, Oct. 2020
+
 
 ## Quick start summary
 If you want to just get started, take a look at these links and ignore the other sections for now. You can come back later and look around some more.
