@@ -1,0 +1,10 @@
+$ git co -b master_yyyymmdd
+$ git fetch upstream
+$ git rbi upstream/master
+
+For every rebase conflict:
+	Check changes for conflicts
+	Resolve any conflicts
+	Add files to staging area
+	$ git rbc
+
