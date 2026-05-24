@@ -1,0 +1,140 @@
+---
+title: "Résumé"
+permalink: /resume/
+excerpt: "Résumé of Matthias Miehl (embedded software engineer)."
+toc: true
+toc_sticky: true
+---
+
+# <i class="fa fa-fw fa-crosshairs"></i> Career objective
+Help create a sustainable future by delivering operational, maintainable, secure, easy to use, and efficient software---[in that order]({{ "/sw-dev-priorities/" | relative_url }}).
+
+
+# <i class="fa fa-fw fa-user"></i> Career profile
+Embedded software engineer with four years of experience in programming C/C++ middleware and application level software for heating controllers and room thermostats using [atomthreads](https://atomthreads.com/) and [FreeRTOS](https://freertos.org/).
+
+Increased developer productivity by organizing <abbr title="A 'fortnight' is a unit of time equal to 14 days.">fortnightly</abbr> developer meetings that facilitate internal knowledge transfer, and documenting relevant knowledge as well as answers to recurring questions.
+
+Improved software quality by furthering the adoption of software development best practices like code reviews, static analysis, and regression testing as well as guiding the development of key features that help us deliver a working product.
+
+Able to work in German and English.
+
+
+# <i class="fas fa-fw fa-tools"></i> Tech stack I am comfortable with
+**Languages**  
+C99, BASH scripts, LaTeX.  
+Working knowledge of C++11 and Python.
+
+**MCU families**  
+STM32 F2/F4/F7, AVR ATmega
+
+**RTOS**  
+FreeRTOS
+
+**Tools**  
+Git, Atollic TrueSTUDIO, EAGLE, KiCAD, vim, LibreCAD.  
+Working knowledge of Make and SCons.
+
+**Protocols**  
+CANopen.  
+Working knowledge of Z-Wave (500 Series, Controllers and End Devices).
+
+**PC OS**  
+Debian GNU/Linux (user/admin), Microsoft Windows
+
+
+# <i class="fas fa-fw fa-user-check"></i> Core personality traits
+- Comfortable taking the initiative
+- Conscientious, diligent, and organized
+- Talent for finding and thus preventing defects
+- Perseverant
+- Eager to learn and improve
+- Desire to share and apply what I learned
+
+
+# <i class="fas fa-fw fa-graduation-cap"></i> Education
+<small>11/2009 -- 10/2010</small>  
+**BSc in Electrical Engineering**  
+Milwaukee School of Engineering, USA  
+
+<small>09/2005 -- 10/2010</small>  
+**Diploma in Electrical Engineering**  
+University of Applied Sciences Lübeck, Germany  
+
+
+# <i class="fa fa-fw fa-briefcase"></i> Experience
+<small>Since 01/2020</small>  
+**C/C++ software engineer for embedded systems**  
+[cbb software GmbH](https://cbb.de/)
+
+TBD
+
+
+<small>09/2015 -- 10/2019</small>  
+**Junior C/C++ software engineer for embedded systems**  
+[SOREL GmbH Mikroelektronik](https://sorel.de/)
+
+*In general:* Maintenance and development of middleware and application logic for STM32 F7 based embedded systems in C and C++ using FreeRTOS.
+
+*Last responsibilities:* Integration of Z-Wave into a new room thermostat product. This includes the translation of application requirements into hardware and software specifications, management and quality control of the external Z-Wave developer's work, hardware debugging and protocol testing including on-site at an external RF lab and another test house, as well as implementation of a generic network interface for communication between the Z-Wave transport layer and the resources close to the application layer.
+
+
+<small>03/2012 -- 03/2015</small>  
+**Camera drone service provider**  
+[Ingenieurbüro Kannenberg & Miehl GbR](https://web.archive.org/web/20150301024436/http://www.airde.net/)
+
+*Services:* Images, videos, panoramic tours, surveying, 3D models.
+
+*Responsibilities:* Organisation (finances, external service providers), IT infrastructure (servers, services), flight law protection of operations (continuous research, communication with authorities), customer support, marketing and contact management, development of products for the surveying industry, image editing, software development (BASH scripts, embedded C, GNU Octave).
+
+
+# <i class="fas fa-fw fa-users"></i> Voluntary work
+**[#StopWatchingUs Lübeck](http://wiki.chaotikum.org/projekte:demonstration:stopwatchingus/)**  
+Establishment of the group; organization of meetings, CryptoParties, and protests; writing texts and giving presentations. See the project’s website for details and material.
+
+**[Chaotikum](https://chaotikum.org/)**  
+Help maintain the IT infrastructure, organize Lübeck's first national "Chaos macht Schule" meeting, and administer some of the mailing lists.
+
+**[Freifunk Lübeck](http://luebeck.freifunk.net/)**  
+`fastd` key management, conflict resolution, establishing monthly community meetings as a basis for continued reflection and project improvement.
+
+**[WebMontag Lübeck](http://webmontag.de/location/luebeck/2015-07-20)**  
+Establishment of the group and organization of the first five events ... until I moved away.
+
+
+# <font color="#bd2727"><i class="fa fa-fw fa-heart"></i></font> Favourites
+**Technical topics**  
+embedded systems, <abbr title="Test-Driven Development">TDD</abbr>, <abbr title="Continuous Integration / Continuous Deployment">CI/CD</abbr>, communication protocols, clean code, software engineering methodologies, software architecture, sustainability and sources of renewable energy, dev tools, <abbr title="operational security">OPSEC</abbr>, <abbr title="Free and Open Source Software">FOSS</abbr>
+
+**Non-technical topics**  
+piano, sci-fi books, meditation, psychology, society
+
+**Software**  
+i3wm, Git, Doxygen, Arch GNU/Linux, Debian GNU/Linux, LaTeX, gnuplot, vim, pytest, Zsh, MuseScore
+
+<!--**Meetups**  
+Chaotikum, Softwerkskammer Ruhr, ...-->
+
+<!--**Books**  
+- Real-Time C++, Christopher Kormanyos, ISBN `978-3-662-47809-7`-->
+
+**People I follow**  
+[Neura Pod](https://www.youtube.com/channel/UCDukC60SYLlPwdU9CWPGx9Q/), 
+[Embedded Artistry](https://embeddedartistry.com/), 
+[Jason Turner](https://www.youtube.com/c/JasonTurner-lefticus/), 
+[Jack Ganssle](http://www.ganssle.com/), 
+[memfault](https://interrupt.memfault.com/blog/), 
+[PVS-Studio](https://www.viva64.com/en/b/), 
+[Lex Fridman](https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA), 
+[embedded.fm](https://embedded.fm/), 
+[EEVblog](https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ), 
+[Martin Fowler](https://martinfowler.com/), 
+[James Bruton](https://www.youtube.com/user/jamesbruton/), 
+[TechLead](https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw), 
+[Louis Rossmann](https://www.youtube.com/channel/UCl2mFZoRqjw_ELax4Yisf6w), 
+[Dr. Greger](https://nutritionfacts.org/)
+<!--, 
+[Drew DeVault](https://www.patreon.com/sircmpwn), 
+[Travis Goodspeed](https://travisgoodspeed.blogspot.com/)
+-->
+

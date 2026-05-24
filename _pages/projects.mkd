@@ -1,0 +1,32 @@
+---
+permalink: /projects/
+title: Projects
+excerpt: "List of projects by Matthias Miehl."
+---
+
+I like writing [Free Software](https://www.gnu.org/philosophy/free-sw.en.html).
+
+<big>[**Embedded Systems Software Quality**](https://t.me/embedded_sw_quality)</big>  
+A Telegram channel where I share relevant articles and insights regarding all aspects of software quality with a focus on embedded systems. For news and random interesting things, join the [discussion group](https://t.me/embedded_sw_quality_discussion). Feel free to ask questions or share your own ideas.
+
+<big>[**email-signature-generator**](https://github.com/makomi/email-signature-generator)</big>  
+Python script for generating email signatures from a single (HTML) template for all employees at once
+
+<big>[**embedded_cicd**](https://github.com/makomi/embedded_cicd)</big> (WIP)  
+Framework for building an individual CI/CD pipeline geared towards embedded systems
+
+<big>[**uart2csv**](https://github.com/makomi/uart2csv)</big>  
+Python script for reading a line via UART and appending it to a CSV file along with a timestamp
+
+<big>[**tdd_templates**](https://github.com/makomi/tdd_templates)</big>  
+Ready-to-use TDD templates for Code Katas/ Coding Dojos
+
+<big>[**timer_template**](https://github.com/makomi/timer_template)</big>  
+Python script for generating an analogue clock timer template
+
+<big>[**Freifunk_git-add-keys**](https://github.com/makomi/Freifunk_git-add-keys)</big>  
+BASH script for bulk adding fastd-keys to a Freifunk community's Git repo
+
+<big>[**mkdocs-template**](https://github.com/makomi/mkdocs-template)</big>  
+An MkDocs project template with Material as a Git submodule
+

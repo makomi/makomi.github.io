@@ -17,17 +17,17 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
-title_separator          : "-"
+title                    : "Matthias Miehl - Embedded Software Engineer"
+title_separator          : ""
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Matthias Miehl"
+description              : &description "Personal website of Matthias Miehl. Projects, blog, résumé."
+url                      : "https://makomi.net" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "makomi/makomi.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : " " # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
@@ -114,19 +114,24 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : *name
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "embedded software engineer" # "embedded systems | C/C++ | TDD | CI/CD | Python | Z-Wave"
+  location         : "Lübeck, Germany"
   email            :
-  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+    - label: "say-hi at makomi.net"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:say-hi at makomi.net?subject=Hey there!"
+    - label: "GPG key"
+      icon: "fas fa-fw fa-key"
+      # url: "https://link-to-gpg-key"
+    - label: "SW quality channel"
+      icon: "fab fa-fw fa-telegram-plane"
+      url: "https://t.me/embedded_sw_quality"
+    - label: "My old website"
+      icon: "fas fa-fw fa-globe-americas" # "fas fa-fw fa-globe-europe" # "fas fa-fw fa-link"
+      url: "http://mkm.w3hs.net/"
     - label: "Twitter"
       icon: "fab fa-fw fa-square-x-twitter"
       # url: "https://twitter.com/"
@@ -135,10 +140,13 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/makomi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Xing"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.xing.com/profile/MatthiasKolja_Miehl"
 
 # Site Footer
 footer:
