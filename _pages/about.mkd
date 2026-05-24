@@ -1,5 +1,7 @@
 ---
 permalink: /
+author_profile: true
+layout: single
 excerpt: "Personal website of Matthias Miehl. Projects, blog, résumé."
 ---
 
