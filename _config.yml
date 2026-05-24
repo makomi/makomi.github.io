@@ -138,6 +138,9 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-square-facebook"
       # url: "https://facebook.com/"
+    - label: "Code"
+      icon: "fab fa-fw fa-github"
+      #url: "https://github.com/makomi/makomi.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/makomi"
@@ -158,9 +161,9 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-square-facebook"
       # url:
-    - label: "GitHub"
+    - label: "Code"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/makomi/makomi.github.io"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -170,9 +173,6 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  since: "2013"
-
-
 # Reading Files
 include:
   - .htaccess
